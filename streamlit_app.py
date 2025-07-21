@@ -44,7 +44,11 @@ if st.button("Predict Playoff Outcome"):
 
     # Load model and predict
     model = joblib.load('NBA.joblib')
-    st.write(f"Loaded model type: {type(model)}")
+    st.write(f"Model type: {type(model)}")
+
+    # Print each classifier in the chain
+    for i, estimator in enumerate(model.estimators_):
+        st.write(f"Classifier #{i}: {type(estimator)}")
     y_prob = model.predict_proba(X)
 
     # Display probabilities
