@@ -44,6 +44,7 @@ if st.button("Predict Playoff Outcome"):
 
     # Load model and predict
     model = joblib.load('NBA.joblib')
+    st.write(f"Loaded model type: {type(model)}")
     y_prob = model.predict_proba(X)
 
     # Display probabilities
