@@ -1,0 +1,665 @@
+Season,Team,Conference,Season record,Conf. Seed,NBA Seed,Last 20 Games record,ORtg Rank,DRtg Rank,2 seasons ago result,Last season result,Playoff Outcome
+2023?2024,Boston Celtics,Est,0.78,1,1,0.8,1,3,NBA Final,Conference Final,NBA Champion
+2023?2024,New York Knicks,Est,0.61,2,6,0.7,7,10,No Playoff,Conference Semi-Final,Conference Semi-Final
+2023?2024,Milwaukee Bucks,Est,0.598,3,8,0.4,6,18,Conference Semi-Final,First Round,First Round
+2023?2024,Cleveland Cavaliers,Est,0.585,4,11,0.4,18,7,No Playoff,First Round,Conference Semi-Final
+2023?2024,Orlando Magic,Est,0.573,5,9,0.55,22,2,No Playoff,No Playoff,First Round
+2023?2024,Indiana Pacers,Est,0.573,6,14,0.65,2,24,No Playoff,No Playoff,Conference Final
+2023?2024,Philadelphia Sixers,Est,0.573,7,15,0.65,13,11,Conference Semi-Final,Conference Semi-Final,First Round
+2023?2024,Miami Heat,Est,0.561,8,16,0.6,21,5,Conference Final,NBA Final,First Round
+2023?2024,Chicago Bulls,Est,0.476,9,20,0.45,19,22,First Round,No Playoff,No Playoff
+2023?2024,Atlanta Hawks,Est,0.439,10,21,0.4,12,28,First Round,First Round,No Playoff
+2023?2024,Oklahoma City Thunder,West,0.695,1,2,0.7,3,4,No Playoff,No Playoff,Conference Semi-Final
+2023?2024,Denver Nuggets,West,0.695,2,3,0.75,5,8,First Round,NBA Champion,Conference Semi-Final
+2023?2024,Minnesota Timberwolves,West,0.683,3,4,0.65,16,1,First Round,First Round,Conference Final
+2023?2024,Los Angeles Clippers,West,0.622,4,5,0.5,4,19,No Playoff,First Round,First Round
+2023?2024,Dallas Mavericks,West,0.61,5,6,0.8,10,17,Conference Final,No Playoff,NBA Final
+2023?2024,Phoenix Suns,West,0.598,6,9,0.65,8,13,Conference Semi-Final,Conference Semi-Final,First Round
+2023?2024,New Orlean Pelicans,West,0.598,7,10,0.65,11,6,First Round,No Playoff,First Round
+2023?2024,Los Angeles Lakers,West,0.573,8,13,0.75,15,16,No Playoff,Conference Final,First Round
+2023?2024,Sacramento Kings,West,0.561,9,17,0.55,14,15,No Playoff,First Round,No Playoff
+2023?2024,Golden State Warriors,West,0.561,10,18,0.65,9,14,NBA Champion,Conference Semi-Final,No Playoff
+2022-2023,Milwaukee Bucks,Est,0.707,1,1,0.65,12,4,NBA Champion,Conference Semi-Final,First Round
+2022-2023,Boston Celtics,Est,0.695,2,2,0.65,2,3,First Round,NBA Final,Conference Final
+2022-2023,Philadelphia Sixers,Est,0.659,3,3,0.7,3,10,Conference Semi-Final,Conference Semi-Final,Conference Semi-Final
+2022-2023,Cleveland Cavaliers,Est,0.622,4,5,0.65,8,1,No Playoff,No Playoff,First Round
+2022-2023,New York Knicks,Est,0.573,5,8,0.6,4,19,First Round,No Playoff,Conference Semi-Final
+2022-2023,Brooklyn Nets,Est,0.549,6,9,0.55,13,16,Conference Semi-Final,First Round,First Round
+2022-2023,Miami Heat,Est,0.537,7,13,0.6,25,8,First Round,Conference Final,NBA Final
+2022-2023,Atlanta Hawks,Est,0.5,8,17,0.55,7,22,Conference Final,First Round,First Round
+2022-2023,Toronto Raptors,Est,0.5,9,18,0.55,11,12,No Playoff,First Round,No Playoff
+2022-2023,Chicago Bulls,Est,0.488,10,19,0.6,23,5,No Playoff,First Round,No Playoff
+2022-2023,Denver Nuggets,West,0.646,1,4,0.5,5,15,Conference Semi-Final,First Round,NBA Champion
+2022-2023,Memphis Grizzlies,West,0.622,2,6,0.65,15,2,First Round,Conference Semi-Final,First Round
+2022-2023,Sacramento Kings,West,0.585,3,7,0.55,1,24,No Playoff,No Playoff,First Round
+2022-2023,Phoenix Suns,West,0.549,4,10,0.6,14,7,NBA Final,Conference Semi-Final,Conference Semi-Final
+2022-2023,Los Angeles Clippers,West,0.537,5,11,0.55,17,18,Conference Final,No Playoff,First Round
+2022-2023,Golden State Warriors,West,0.537,6,12,0.6,9,17,No Playoff,NBA Champion,Conference Semi-Final
+2022-2023,Los Angeles Lakers,West,0.524,7,14,0.75,20,11,First Round,No Playoff,Conference Final
+2022-2023,Minnesota Timberwolves,West,0.512,8,15,0.6,24,9,No Playoff,First Round,First Round
+2022-2023,New Orlean Pelicans,West,0.512,9,16,0.6,21,6,No Playoff,First Round,No Playoff
+2022-2023,Oklahoma City Thunder,West,0.488,10,20,0.6,16,13,No Playoff,No Playoff,No Playoff
+2021-2022,Miami Heat,Est,0.646,1,4,0.6,10,5,NBA Final,First Round,Conference Final
+2021-2022,Boston Celtics,Est,0.622,2,6,0.75,6,2,Conference Final,First Round,NBA Final
+2021-2022,Milwaukee Bucks,Est,0.622,3,7,0.7,3,13,Conference Semi-Final,NBA Champion,Conference Semi-Final
+2021-2022,Philadelphia Sixers,Est,0.622,4,8,0.6,12,12,First Round,Conference Semi-Final,Conference Semi-Final
+2021-2022,Toronto Raptors,Est,0.585,5,11,0.7,14,11,Conference Semi-Final,No Playoff,First Round
+2021-2022,Chicago Bulls,Est,0.561,6,12,0.35,13,23,No Playoff,No Playoff,First Round
+2021-2022,Brooklyn Nets,Est,0.537,7,14,0.6,11,20,First Round,Conference Semi-Final,First Round
+2021-2022,Atlanta Hawks,Est,0.524,9,16,0.65,2,26,No Playoff,Conference Final,First Round
+2021-2022,Phoenix Suns,West,0.78,1,1,0.7,4,3,No Playoff,NBA Final,Conference Semi-Final
+2021-2022,Memphis Grizzlies,West,0.683,2,2,0.7,5,4,No Playoff,First Round,Conference Semi-Final
+2021-2022,Golden State Warriors,West,0.646,3,3,0.5,17,1,No Playoff,No Playoff,NBA Champion
+2021-2022,Dallas Mavericks,West,0.634,4,5,0.75,15,6,First Round,First Round,Conference Final
+2021-2022,Utah Jazz,West,0.598,5,9,0.5,1,9,First Round,Conference Semi-Final,First Round
+2021-2022,Denver Nuggets,West,0.585,6,10,0.6,7,15,Conference Final,Conference Semi-Final,First Round
+2021-2022,Minnesota Timberwolves,West,0.561,7,13,0.65,8,14,No Playoff,No Playoff,First Round
+2021-2022,New Orlean Pelicans,West,0.439,9,20,0.5,20,19,No Playoff,No Playoff,First Round
+2020-2021,Philadelphia Sixers,Est,0.681,1,3,0.7,13,2,Conference Semi-Final,First Round,Conference Semi-Final
+2020-2021,Brooklyn Nets,Est,0.667,2,4,0.6,1,22,First Round,First Round,Conference Semi-Final
+2020-2021,Milwaukee Bucks,Est,0.639,3,7,0.7,7,8,Conference Final,Conference Semi-Final,NBA Champion
+2020-2021,New York Knicks,Est,0.569,4,11,0.8,23,4,No Playoff,No Playoff,First Round
+2020-2021,Atlanta Hawks,Est,0.569,5,12,0.7,8,21,No Playoff,No Playoff,Conference Final
+2020-2021,Miami Heat,Est,0.556,6,13,0.65,17,7,No Playoff,NBA Final,First Round
+2020-2021,Boston Celtics,Est,0.5,7,16,0.5,10,14,Conference Semi-Final,Conference Final,First Round
+2020-2021,Washington Wizards,Est,0.472,8,17,0.75,19,18,No Playoff,No Playoff,First Round
+2020-2021,Utah Jazz,West,0.722,1,1,0.65,2,3,First Round,First Round,Conference Semi-Final
+2020-2021,Phoenix Suns,West,0.708,2,2,0.7,6,10,No Playoff,No Playoff,NBA Final
+2020-2021,Denver Nuggets,West,0.653,3,5,0.65,5,13,Conference Semi-Final,Conference Final,Conference Semi-Final
+2020-2021,Los Angeles Clippers,West,0.653,4,6,0.65,3,9,First Round,Conference Semi-Final,Conference Final
+2020-2021,Dallas Mavericks,West,0.583,5,8,0.65,9,20,No Playoff,First Round,First Round
+2020-2021,Portland Blazers,West,0.583,6,9,0.55,4,29,Conference Final,First Round,First Round
+2020-2021,Los Angeles Lakers,West,0.583,7,10,0.5,24,1,No Playoff,NBA Champion,First Round
+2020-2021,Memphis Grizzlies,West,0.528,9,15,0.65,16,6,No Playoff,No Playoff,First Round
+2019-2020,Milwaukee Bucks,Est,0.767,1,1,0.5,9,1,First Round,Conference Final,Conference Semi-Final
+2019-2020,Toronto Raptors,Est,0.737,2,2,0.7,14,2,Conference Semi-Final,NBA Champion,Conference Semi-Final
+2019-2020,Boston Celtics,Est,0.667,3,5,0.55,4,4,Conference Final,Conference Semi-Final,Conference Final
+2019-2020,Indiana Pacers,Est,0.616,4,7,0.7,19,6,First Round,First Round,First Round
+2019-2020,Miami Heat,Est,0.603,5,9,0.45,7,11,First Round,No Playoff,NBA Final
+2019-2020,Philadelphia Sixers,Est,0.589,6,13,0.55,13,8,Conference Semi-Final,Conference Semi-Final,First Round
+2019-2020,Brooklyn Nets,Est,0.486,7,14,0.55,22,9,No Playoff,First Round,First Round
+2019-2020,Orlando Magic,Est,0.452,8,18,0.55,23,10,No Playoff,First Round,First Round
+2019-2020,Los Angeles Lakers,West,0.732,1,3,0.65,11,3,No Playoff,No Playoff,NBA Champion
+2019-2020,Los Angeles Clippers,West,0.681,2,4,0.65,2,5,No Playoff,First Round,Conference Semi-Final
+2019-2020,Denver Nuggets,West,0.63,3,6,0.45,5,16,No Playoff,Conference Semi-Final,Conference Final
+2019-2020,Houston Rockets,West,0.611,4,8,0.55,6,14,Conference Final,Conference Semi-Final,Conference Semi-Final
+2019-2020,Oklahoma City Thunder,West,0.611,5,10,0.6,15,7,First Round,First Round,First Round
+2019-2020,Utah Jazz,West,0.611,6,11,0.5,8,12,Conference Semi-Final,First Round,First Round
+2019-2020,Dallas Mavericks,West,0.573,7,12,0.6,1,18,No Playoff,No Playoff,First Round
+2019-2020,Portland Blazers,West,0.473,8,15,0.45,3,27,First Round,Conference Final,First Round
+2018-2019,Milwaukee Bucks,Est,0.732,1,1,0.6,4,1,First Round,First Round,Conference Final
+2018-2019,Toronto Raptors,Est,0.707,2,2,0.65,5,5,Conference Semi-Final,Conference Semi-Final,NBA Champion
+2018-2019,Philadelphia Sixers,Est,0.622,3,7,0.55,8,15,No Playoff,Conference Semi-Final,Conference Semi-Final
+2018-2019,Boston Celtics,Est,0.598,4,9,0.6,10,7,Conference Final,Conference Final,Conference Semi-Final
+2018-2019,Indiana Pacers,Est,0.585,5,11,0.4,18,3,First Round,First Round,First Round
+2018-2019,Orlando Magic,Est,0.512,6,14,0.7,22,8,No Playoff,No Playoff,First Round
+2018-2019,Brooklyn Nets,Est,0.512,7,15,0.5,19,14,No Playoff,No Playoff,First Round
+2018-2019,Detroit Pistons,Est,0.5,8,16,0.5,21,11,No Playoff,No Playoff,First Round
+2018-2019,Golden State Warriors,West,0.695,1,3,0.7,1,13,NBA Champion,NBA Champion,NBA Final
+2018-2019,Denver Nuggets,West,0.659,2,4,0.6,6,9,No Playoff,No Playoff,Conference Semi-Final
+2018-2019,Portland Blazers,West,0.646,3,5,0.75,3,16,First Round,First Round,Conference Final
+2018-2019,Houston Rockets,West,0.646,4,6,0.8,2,18,Conference Semi-Final,Conference Final,Conference Semi-Final
+2018-2019,Utah Jazz,West,0.61,5,8,0.7,15,2,Conference Semi-Final,Conference Semi-Final,First Round
+2018-2019,Oklahoma City Thunder,West,0.598,6,10,0.55,17,4,First Round,First Round,First Round
+2018-2019,San Antonio Spurs,West,0.585,7,12,0.75,7,19,Conference Final,First Round,First Round
+2018-2019,Los Angeles Clippers,West,0.585,8,13,0.7,9,21,First Round,No Playoff,First Round
+2017-2018,Toronto Raptors,Est,0.72,1,2,0.7,2,5,Conference Final,Conference Semi-Final,Conference Semi-Final
+2017-2018,Boston Celtics,Est,0.671,2,4,0.6,18,2,First Round,Conference Final,Conference Final
+2017-2018,Philadelphia Sixers,Est,0.634,3,5,0.9,11,4,No Playoff,No Playoff,Conference Semi-Final
+2017-2018,Cleveland Cavaliers,Est,0.61,4,6,0.7,5,29,NBA Champion,NBA Final,NBA Final
+2017-2018,Indiana Pacers,Est,0.585,5,8,0.65,12,13,First Round,First Round,First Round
+2017-2018,Miami Heat,Est,0.537,6,15,0.6,22,8,Conference Semi-Final,No Playoff,First Round
+2017-2018,Milwaukee Bucks,Est,0.537,7,16,0.55,9,19,No Playoff,First Round,First Round
+2017-2018,Washington Wizards,Est,0.524,8,17,0.35,13,15,No Playoff,Conference Semi-Final,First Round
+2017-2018,Houston Rockets,West,0.793,1,1,0.8,1,6,First Round,Conference Semi-Final,Conference Final
+2017-2018,Golden State Warriors,West,0.707,2,3,0.5,3,11,NBA Final,NBA Champion,NBA Champion
+2017-2018,Portland Blazers,West,0.598,3,7,0.65,15,7,Conference Semi-Final,First Round,First Round
+2017-2018,Oklahoma City Thunder,West,0.585,4,9,0.65,7,9,Conference Final,First Round,First Round
+2017-2018,Utah Jazz,West,0.585,5,10,0.8,16,1,No Playoff,Conference Semi-Final,Conference Semi-Final
+2017-2018,New Orlean Pelicans,West,0.585,6,11,0.6,10,14,No Playoff,No Playoff,Conference Semi-Final
+2017-2018,San Antonio Spurs,West,0.573,7,12,0.55,17,3,Conference Semi-Final,Conference Final,First Round
+2017-2018,Minnesota Timberwolves,West,0.573,8,13,0.55,4,27,No Playoff,No Playoff,First Round
+2016-2017,Boston Celtics,Est,0.646,1,4,0.65,8,13,First Round,First Round,Conference Final
+2016-2017,Cleveland Cavaliers,Est,0.622,2,5,0.45,3,21,NBA Final,NBA Champion,NBA Final
+2016-2017,Toronto Raptors,Est,0.622,3,7,0.7,6,11,First Round,Conference Final,Conference Semi-Final
+2016-2017,Washington Wizards,Est,0.598,4,9,0.55,7,19,Conference Semi-Final,No Playoff,Conference Semi-Final
+2016-2017,Atlanta Hawks,Est,0.524,5,11,0.45,27,4,Conference Final,Conference Semi-Final,First Round
+2016-2017,Milwaukee Bucks,Est,0.512,6,13,0.65,13,20,First Round,No Playoff,First Round
+2016-2017,Indiana Pacers,Est,0.512,7,14,0.5,15,16,No Playoff,First Round,First Round
+2016-2017,Chicago Bulls,Est,0.5,8,15,0.5,20,6,Conference Semi-Final,No Playoff,First Round
+2016-2017,Golden State Warriors,West,0.817,1,1,0.8,1,2,NBA Champion,NBA Final,NBA Champion
+2016-2017,San Antonio Spurs,West,0.744,2,2,0.6,9,1,First Round,Conference Semi-Final,Conference Final
+2016-2017,Houston Rockets,West,0.671,3,3,0.6,2,18,Conference Final,First Round,Conference Semi-Final
+2016-2017,Los Angeles Clippers,West,0.622,4,6,0.7,2,18,Conference Semi-Final,First Round,First Round
+2016-2017,Utah Jazz,West,0.622,5,8,0.65,12,3,No Playoff,No Playoff,Conference Semi-Final
+2016-2017,Oklahoma City Thunder,West,0.573,6,10,0.6,16,10,No Playoff,Conference Final,First Round
+2016-2017,Memphis Grizzlies,West,0.524,7,12,0.35,18,7,Conference Semi-Final,First Round,First Round
+2016-2017,Portland Blazers,West,0.5,8,16,0.7,11,24,First Round,Conference Semi-Final,First Round
+2015-2016,Cleveland Cavaliers,Est,0.695,1,3,0.65,3,9,No Playoff,NBA Final,NBA Champion
+2015-2016,Toronto Raptors,Est,0.683,2,4,0.7,4,11,First Round,First Round,Conference Final
+2015-2016,Miami Heat,Est,0.585,3,7,0.6,13,10,NBA Final,No Playoff,Conference Semi-Final
+2015-2016,Atlanta Hawks,Est,0.585,4,8,0.7,22,2,First Round,Conference Final,Conference Semi-Final
+2015-2016,Boston Celtics,Est,0.585,5,9,0.55,10,4,No Playoff,First Round,First Round
+2015-2016,Charlotte Hornets,Est,0.585,6,10,0.7,9,8,First Round,No Playoff,First Round
+2015-2016,Indiana Pacers,Est,0.549,7,11,0.65,25,3,Conference Final,No Playoff,First Round
+2015-2016,Detroit Pistons,Est,0.537,8,12,0.65,15,12,No Playoff,No Playoff,First Round
+2015-2016,Golden State Warriors,West,0.89,1,1,0.85,1,5,First Round,NBA Champion,NBA Final
+2015-2016,San Antonio Spurs,West,0.817,2,2,0.7,5,1,NBA Champion,First Round,Conference Semi-Final
+2015-2016,Oklahoma City Thunder,West,0.671,3,5,0.65,2,13,Conference Final,No Playoff,Conference Final
+2015-2016,Los Angeles Clippers,West,0.646,4,6,0.6,8,6,First Round,Conference Semi-Final,Conference Semi-Final
+2015-2016,Portland Blazers,West,0.537,5,13,0.55,6,19,Conference Semi-Final,First Round,Conference Semi-Final
+2015-2016,Dallas Mavericks,West,0.512,6,14,0.45,11,17,First Round,First Round,First Round
+2015-2016,Memphis Grizzlies,West,0.512,7,15,0.25,17,20,First Round,Conference Semi-Final,First Round
+2015-2016,Houston Rockets,West,0.5,8,17,0.55,7,22,First Round,Conference Final,First Round
+2014-2015,Atlanta Hawks,Est,0.732,1,2,0.55,6,6,First Round,First Round,Conference Final
+2014-2015,Cleveland Cavaliers,Est,0.646,2,7,0.75,4,18,No Playoff,No Playoff,NBA Final
+2014-2015,Chicago Bulls,Est,0.61,3,10,0.55,10,11,Conference Semi-Final,First Round,Conference Semi-Final
+2014-2015,Toronto Raptors,Est,0.598,4,11,0.55,3,26,No Playoff,First Round,First Round
+2014-2015,Washington Wizards,Est,0.561,5,12,0.55,22,5,No Playoff,Conference Semi-Final,Conference Semi-Final
+2014-2015,Milwaukee Bucks,Est,0.5,6,15,0.4,26,4,First Round,No Playoff,First Round
+2014-2015,Boston Celtics,Est,0.488,7,16,0.7,18,12,First Round,No Playoff,First Round
+2014-2015,Brooklyn Nets,Est,0.463,8,20,0.65,19,23,First Round,Conference Semi-Final,First Round
+2014-2015,Golden State Warriors,West,0.817,1,1,0.85,2,1,Conference Semi-Final,First Round,NBA Champion
+2014-2015,Houston Rockets,West,0.683,2,3,0.7,12,8,First Round,First Round,Conference Final
+2014-2015,Los Angeles Clippers,West,0.683,3,4,0.8,1,16,First Round,Conference Semi-Final,Conference Semi-Final
+2014-2015,Portland Blazers,West,0.622,4,8,0.45,9,9,No Playoff,Conference Semi-Final,First Round
+2014-2015,Memphis Grizzlies,West,0.671,5,5,0.55,13,3,Conference Final,First Round,Conference Semi-Final
+2014-2015,San Antonio Spurs,West,0.671,6,6,0.8,7,2,NBA Final,NBA Champion,First Round
+2014-2015,Dallas Mavericks,West,0.61,7,9,0.5,5,19,No Playoff,First Round,First Round
+2014-2015,New Orlean Pelicans,West,0.549,8,13,0.6,8,22,No Playoff,No Playoff,First Round
+2013-2014,Indiana Pacers,Est,0.683,1,4,0.5,23,1,Conference Semi-Final,Conference Final,Conference Final
+2013-2014,Miami Heat,Est,0.659,2,6,0.5,2,12,NBA Champion,NBA Champion,NBA Final
+2013-2014,Toronto Raptors,Est,0.585,3,12,0.65,9,10,No Playoff,No Playoff,First Round
+2013-2014,Chicago Bulls,Est,0.585,4,13,0.7,28,2,First Round,Conference Semi-Final,First Round
+2013-2014,Washington Wizards,Est,0.537,5,14,0.55,16,7,No Playoff,No Playoff,Conference Semi-Final
+2013-2014,Brooklyn Nets,Est,0.537,6,15,0.6,14,20,No Playoff,First Round,Conference Semi-Final
+2013-2014,Charlotte Bobcats,Est,0.524,7,16,0.7,24,6,No Playoff,No Playoff,First Round
+2013-2014,Atlanta Hawks,Est,0.463,8,18,0.55,17,14,First Round,First Round,First Round
+2013-2014,San Antonio Spurs,West,0.756,1,1,0.8,7,3,Conference Final,NBA Final,NBA Champion
+2013-2014,Oklahoma City Thunder,West,0.72,2,2,0.65,6,5,NBA Final,Conference Semi-Final,Conference Final
+2013-2014,Los Angeles Clippers,West,0.695,3,3,0.75,1,9,Conference Semi-Final,First Round,Conference Semi-Final
+2013-2014,Houston Rockets,West,0.659,4,5,0.55,5,13,No Playoff,First Round,First Round
+2013-2014,Portland Blazers,West,0.659,5,7,0.6,3,16,No Playoff,No Playoff,Conference Semi-Final
+2013-2014,Golden State Warriors,West,0.622,6,8,0.65,12,4,No Playoff,Conference Semi-Final,First Round
+2013-2014,Memphis Grizzlies,West,0.61,7,9,0.7,15,8,First Round,Conference Final,First Round
+2013-2014,Dallas Mavericks,West,0.598,8,10,0.65,4,22,First Round,No Playoff,First Round
+2012-2013,Miami Heat,Est,0.805,1,1,0.9,1,9,NBA Final,NBA Champion,NBA Champion
+2012-2013,New York Knicks,Est,0.659,2,7,0.8,3,17,First Round,First Round,Conference Semi-Final
+2012-2013,Indiana Pacers,Est,0.605,3,8,0.5,20,1,First Round,Conference Semi-Final,Conference Final
+2012-2013,Brooklyn Nets,Est,0.598,4,9,0.65,8,19,No Playoff,No Playoff,First Round
+2012-2013,Chicago Bulls,Est,0.549,5,13,0.5,23,6,Conference Final,First Round,Conference Semi-Final
+2012-2013,Atlanta Hawks,Est,0.537,6,14,0.5,18,10,Conference Semi-Final,First Round,First Round
+2012-2013,Boston Celtics,Est,0.506,7,16,0.35,24,7,Conference Semi-Final,Conference Final,First Round
+2012-2013,Milwaukee Bucks,Est,0.463,8,18,0.3,22,12,No Playoff,No Playoff,First Round
+2012-2013,Oklahoma City Thunder,West,0.732,1,2,0.7,2,4,Conference Final,NBA Final,Conference Semi-Final
+2012-2013,San Antonio Spurs,West,0.707,2,3,0.5,7,3,First Round,Conference Final,NBA Final
+2012-2013,Denver Nuggets,West,0.695,3,4,0.85,5,11,First Round,First Round,First Round
+2012-2013,Los Angeles Clippers,West,0.683,4,5,0.65,4,8,No Playoff,Conference Semi-Final,First Round
+2012-2013,Memphis Grizzlies,West,0.683,5,6,0.65,17,2,Conference Semi-Final,First Round,Conference Final
+2012-2013,Golden State Warriors,West,0.573,6,10,0.6,11,13,No Playoff,No Playoff,Conference Semi-Final
+2012-2013,Los Angeles Lakers,West,0.549,7,11,0.7,9,20,Conference Semi-Final,Conference Semi-Final,First Round
+2012-2013,Houston Rockets,West,0.549,8,12,0.6,6,16,No Playoff,No Playoff,First Round
+2011-2012,Chicago Bulls,Est,0.758,1,1,0.7,5,1,First Round,Conference Final,First Round
+2011-2012,Miami Heat,Est,0.697,2,4,0.55,6,4,First Round,NBA Final,NBA Champion
+2011-2012,Indiana Pacers,Est,0.636,3,5,0.75,7,11,No Playoff,First Round,Conference Semi-Final
+2011-2012,Boston Celtics,Est,0.591,4,10,0.7,25,2,NBA Final,Conference Semi-Final,Conference Final
+2011-2012,Atlanta Hawks,Est,0.606,5,9,0.7,15,6,Conference Semi-Final,Conference Semi-Final,First Round
+2011-2012,Orlando Magic,Est,0.561,6,12,0.4,16,12,Conference Final,First Round,First Round
+2011-2012,New York Knicks,Est,0.545,7,13,0.7,17,5,No Playoff,First Round,First Round
+2011-2012,Philadelphia Sixers,Est,0.53,8,16,0.45,20,3,No Playoff,First Round,Conference Semi-Final
+2011-2012,San Antonio Spurs,West,0.758,1,2,0.9,1,10,Conference Semi-Final,First Round,Conference Final
+2011-2012,Oklahoma City Thunder,West,0.712,2,3,0.65,2,9,First Round,Conference Final,NBA Final
+2011-2012,Los Angeles Lakers,West,0.621,3,7,0.65,10,13,NBA Champion,Conference Semi-Final,Conference Semi-Final
+2011-2012,Memphis Grizzlies,West,0.621,4,6,0.8,19,7,No Playoff,Conference Semi-Final,First Round
+2011-2012,Los Angeles Clippers,West,0.606,5,8,0.7,4,18,No Playoff,No Playoff,Conference Semi-Final
+2011-2012,Denver Nuggets,West,0.576,6,11,0.65,3,20,First Round,First Round,First Round
+2011-2012,Dallas Mavericks,West,0.545,7,14,0.5,22,8,First Round,NBA Champion,First Round
+2011-2012,Utah Jazz,West,0.545,8,15,0.6,8,19,Conference Semi-Final,No Playoff,First Round
+2010-2011,Chicago Bulls,Est,0.756,1,1,0.9,11,1,First Round,First Round,Conference Final
+2010-2011,Miami Heat,Est,0.707,2,3,0.75,2,5,First Round,First Round,NBA Final
+2010-2011,Boston Celtics,Est,0.683,3,6,0.5,18,2,Conference Semi-Final,NBA Final,Conference Semi-Final
+2010-2011,Orlando Magic,Est,0.634,4,8,0.6,14,3,NBA Final,Conference Final,First Round
+2010-2011,Atlanta Hawks,Est,0.537,5,13,0.35,20,14,Conference Semi-Final,Conference Semi-Final,Conference Semi-Final
+2010-2011,New York Knicks,Est,0.512,6,15,0.45,6,21,No Playoff,No Playoff,First Round
+2010-2011,Philadelphia Sixers,Est,0.5,7,16,0.45,17,9,First Round,No Playoff,First Round
+2010-2011,Indiana Pacers,Est,0.451,8,19,0.5,23,12,No Playoff,No Playoff,First Round
+2010-2011,San Antonio Spurs,West,0.744,1,2,0.5,3,11,First Round,Conference Semi-Final,First Round
+2010-2011,Los Angeles Lakers,West,0.695,2,4,0.7,7,6,NBA Champion,NBA Champion,Conference Semi-Final
+2010-2011,Dallas Mavericks,West,0.695,3,5,0.6,8,7,Conference Semi-Final,First Round,NBA Champion
+2010-2011,Oklahoma City Thunder,West,0.671,4,7,0.8,4,16,No Playoff,First Round,Conference Final
+2010-2011,Denver Nuggets,West,0.61,5,9,0.7,1,15,Conference Final,First Round,First Round
+2010-2011,Portland Blazers,West,0.585,6,10,0.65,10,13,First Round,First Round,First Round
+2010-2011,New Orlean Hornets,West,0.561,7,11,0.55,19,10,First Round,No Playoff,First Round
+2010-2011,Memphis Grizzlies,West,0.561,8,12,0.6,15,8,No Playoff,No Playoff,Conference Semi-Final
+2009-2010,Cleveland Cavaliers,Est,0.744,1,1,0.65,4,7,Conference Semi-Final,Conference Final,Conference Semi-Final
+2009-2010,Orlando Magic,Est,0.72,2,2,0.85,6,3,Conference Semi-Final,NBA Final,Conference Final
+2009-2010,Atlanta Hawks,Est,0.646,3,7,0.65,2,13,First Round,Conference Semi-Final,Conference Semi-Final
+2009-2010,Boston Celtics,Est,0.61,4,12,0.5,15,5,NBA Champion,Conference Semi-Final,NBA Final
+2009-2010,Miami Heat,Est,0.573,5,13,0.8,19,6,No Playoff,First Round,First Round
+2009-2010,Milwaukee Bucks,Est,0.561,6,14,0.65,23,1,No Playoff,No Playoff,First Round
+2009-2010,Charlotte Bobcats,Est,0.537,7,15,0.65,24,2,No Playoff,No Playoff,First Round
+2009-2010,Chicago Bulls,Est,0.5,8,17,0.5,27,11,No Playoff,First Round,First Round
+2009-2010,Los Angeles Lakers,West,0.695,1,3,0.55,11,4,NBA Final,NBA Champion,NBA Champion
+2009-2010,Dallas Mavericks,West,0.671,2,4,0.7,10,12,First Round,Conference Semi-Final,First Round
+2009-2010,Phoenix Suns,West,0.659,3,5,0.8,1,22,First Round,No Playoff,Conference Final
+2009-2010,Denver Nuggets,West,0.646,4,6,0.6,3,16,First Round,Conference Final,First Round
+2009-2010,Utah Jazz,West,0.646,5,8,0.65,8,10,Conference Semi-Final,First Round,Conference Semi-Final
+2009-2010,Portland Blazers,West,0.61,6,11,0.75,7,15,No Playoff,First Round,First Round
+2009-2010,San Antonio Spurs,West,0.61,7,9,0.65,9,8,Conference Final,First Round,Conference Semi-Final
+2009-2010,Oklahoma City Thunder,West,0.61,8,10,0.6,12,9,No Playoff,No Playoff,First Round
+2008-2009,Cleveland Cavaliers,Est,0.805,1,1,0.85,4,3,NBA Final,Conference Semi-Final,Conference Final
+2008-2009,Boston Celtics,Est,0.756,2,3,0.7,5,2,No Playoff,NBA Champion,Conference Semi-Final
+2008-2009,Orlando Magic,Est,0.72,3,4,0.65,12,1,First Round,Conference Semi-Final,NBA Final
+2008-2009,Atlanta Hawks,Est,0.573,4,12,0.65,9,12,No Playoff,First Round,Conference Semi-Final
+2008-2009,Miami Heat,Est,0.524,5,14,0.5,20,11,First Round,No Playoff,First Round
+2008-2009,Philadelphia Sixers,Est,0.5,6,15,0.5,17,16,No Playoff,First Round,First Round
+2008-2009,Chicago Bulls,Est,0.5,7,16,0.65,13,18,Conference Semi-Final,No Playoff,First Round
+2008-2009,Detroit Pistons,Est,0.476,8,17,0.35,21,15,Conference Final,Conference Final,First Round
+2008-2009,Los Angeles Lakers,West,0.793,1,2,0.75,3,6,First Round,NBA Final,NBA Champion
+2008-2009,Denver Nuggets,West,0.659,2,5,0.7,7,8,First Round,First Round,Conference Final
+2008-2009,San Antonio Spurs,West,0.659,3,6,0.6,15,5,NBA Champion,Conference Final,First Round
+2008-2009,Portland Blazers,West,0.659,4,7,0.75,1,14,No Playoff,No Playoff,First Round
+2008-2009,Houston Rockets,West,0.646,5,8,0.7,14,4,First Round,First Round,Conference Semi-Final
+2008-2009,Dallas Mavericks,West,0.61,6,9,0.65,6,17,First Round,First Round,Conference Semi-Final
+2008-2009,New Orlean Hornets,West,0.598,7,10,0.5,11,10,No Playoff,Conference Semi-Final,First Round
+2008-2009,Utah Jazz,West,0.585,8,11,0.45,8,9,Conference Final,Conference Semi-Final,First Round
+2007-2008,Boston Celtics,Est,0.805,1,1,0.8,9,1,No Playoff,No Playoff,NBA Champion
+2007-2008,Detroit Pistons,Est,0.72,2,2,0.7,7,4,Conference Final,Conference Final,Conference Final
+2007-2008,Orlando Magic,Est,0.634,3,9,0.65,6,6,No Playoff,First Round,Conference Semi-Final
+2007-2008,Cleveland Cavaliers,Est,0.549,4,13,0.5,20,12,Conference Semi-Final,NBA Final,Conference Semi-Final
+2007-2008,Washington Wizards,Est,0.524,5,14,0.65,12,24,First Round,First Round,First Round
+2007-2008,Toronto Raptors,Est,0.5,6,15,0.35,10,13,No Playoff,First Round,First Round
+2007-2008,Philadelphia Sixers,Est,0.488,7,17,0.55,18,9,No Playoff,No Playoff,First Round
+2007-2008,Atlanta Hawks,Est,0.451,8,19,0.55,16,18,No Playoff,No Playoff,First Round
+2007-2008,Los Angeles Lakers,West,0.695,1,3,0.65,3,5,First Round,First Round,NBA Final
+2007-2008,New Orlean Hornets,West,0.683,2,4,0.7,5,7,No Playoff,No Playoff,Conference Semi-Final
+2007-2008,San Antonio Spurs,West,0.683,3,5,0.65,15,3,Conference Semi-Final,NBA Champion,Conference Final
+2007-2008,Utah Jazz,West,0.659,4,6,0.7,1,11,No Playoff,Conference Semi-Final,Conference Semi-Final
+2007-2008,Houston Rockets,West,0.671,5,7,0.65,17,2,No Playoff,First Round,First Round
+2007-2008,Phoenix Suns,West,0.671,6,8,0.75,2,16,Conference Final,Conference Semi-Final,First Round
+2007-2008,Dallas Mavericks,West,0.622,7,10,0.6,8,8,NBA Final,First Round,First Round
+2007-2008,Denver Nuggets,West,0.61,8,11,0.65,11,10,First Round,First Round,First Round
+2006-2007,Detroit Pistons,Est,0.646,1,4,0.65,6,6,NBA Final,Conference Final,Conference Final
+2006-2007,Cleveland Cavaliers,Est,0.61,2,7,0.65,18,4,No Playoff,Conference Semi-Final,NBA Final
+2006-2007,Toronto Raptors,Est,0.573,3,9,0.7,10,12,No Playoff,No Playoff,First Round
+2006-2007,Miami Heat,Est,0.537,4,11,0.55,24,9,Conference Final,NBA Champion,First Round
+2006-2007,Chicago Bulls,Est,0.598,5,8,0.7,22,1,First Round,First Round,Conference Semi-Final
+2006-2007,New Jersey Nets,Est,0.5,6,14,0.65,16,15,First Round,Conference Semi-Final,Conference Semi-Final
+2006-2007,Washington Wizards,Est,0.5,7,15,0.35,4,27,Conference Semi-Final,First Round,First Round
+2006-2007,Orlando Magic,Est,0.488,8,16,0.55,19,7,No Playoff,No Playoff,First Round
+2006-2007,Dallas Mavericks,West,0.817,1,1,0.75,2,5,Conference Semi-Final,NBA Final,First Round
+2006-2007,Phoenix Suns,West,0.744,2,2,0.65,1,13,Conference Final,Conference Final,Conference Semi-Final
+2006-2007,San Antonio Spurs,West,0.707,3,3,0.7,5,2,NBA Champion,Conference Semi-Final,NBA Champion
+2006-2007,Utah Jazz,West,0.622,4,5,0.4,3,14,No Playoff,No Playoff,Conference Final
+2006-2007,Houston Rockets,West,0.634,5,6,0.7,15,3,First Round,No Playoff,First Round
+2006-2007,Denver Nuggets,West,0.549,6,10,0.7,9,10,First Round,First Round,First Round
+2006-2007,Los Angeles Lakers,West,0.512,7,12,0.45,7,24,No Playoff,First Round,First Round
+2006-2007,Golden State Warriors,West,0.512,8,13,0.75,12,18,No Playoff,No Playoff,Conference Semi-Final
+2005-2006,Detroit Pistons,Est,0.78,1,1,0.7,4,5,NBA Champion,NBA Final,Conference Final
+2005-2006,Miami Heat,Est,0.634,2,5,0.55,7,9,Conference Semi-Final,Conference Final,NBA Champion
+2005-2006,Cleveland Cavaliers,Est,0.61,3,6,0.7,9,14,No Playoff,No Playoff,Conference Semi-Final
+2005-2006,New Jersey Nets,Est,0.598,4,8,0.75,24,4,Conference Semi-Final,First Round,Conference Semi-Final
+2005-2006,Washington Wizards,Est,0.512,5,13,0.5,6,22,No Playoff,Conference Semi-Final,First Round
+2005-2006,Indiana Pacers,Est,0.5,6,14,0.45,21,3,Conference Final,Conference Semi-Final,First Round
+2005-2006,Chicago Bulls,Est,0.5,7,15,0.7,25,6,No Playoff,First Round,First Round
+2005-2006,Milwaukee Bucks,Est,0.481,8,17,0.5,16,23,First Round,No Playoff,First Round
+2005-2006,San Antonio Spurs,West,0.768,1,2,0.75,10,1,Conference Semi-Final,NBA Champion,Conference Semi-Final
+2005-2006,Dallas Mavericks,West,0.732,2,3,0.55,1,11,First Round,Conference Semi-Final,NBA Final
+2005-2006,Phoenix Suns,West,0.659,3,4,0.55,2,15,No Playoff,Conference Final,Conference Final
+2005-2006,Denver Nuggets,West,0.537,4,12,0.5,17,13,First Round,First Round,First Round
+2005-2006,Memphis Grizzlies,West,0.598,5,7,0.75,13,2,First Round,First Round,First Round
+2005-2006,Los Angeles Clippers,West,0.573,6,9,0.5,19,7,No Playoff,No Playoff,Conference Semi-Final
+2005-2006,Los Angeles Lakers,West,0.549,7,10,0.65,8,16,NBA Final,No Playoff,First Round
+2005-2006,Sacramento Kings,West,0.537,8,11,0.65,11,12,Conference Semi-Final,First Round,First Round
+2004-2005,Miami Heat,Est,0.72,1,3,0.65,4,5,No Playoff,Conference Semi-Final,Conference Final
+2004-2005,Detroit Pistons,Est,0.659,2,5,0.75,19,3,Conference Final,NBA Champion,NBA Final
+2004-2005,Chicago Bulls,Est,0.573,3,10,0.75,27,2,No Playoff,No Playoff,First Round
+2004-2005,Boston Celtics,Est,0.549,4,12,0.6,9,14,Conference Semi-Final,First Round,First Round
+2004-2005,Washington Wizards,Est,0.549,5,13,0.5,10,19,No Playoff,No Playoff,Conference Semi-Final
+2004-2005,Indiana Pacers,Est,0.537,6,15,0.65,20,11,First Round,Conference Final,Conference Semi-Final
+2004-2005,Philadelphia Sixers,Est,0.524,7,16,0.65,25,9,Conference Semi-Final,No Playoff,First Round
+2004-2005,New Jersey Nets,Est,0.512,8,17,0.75,26,7,NBA Final,Conference Semi-Final,First Round
+2004-2005,Phoenix Suns,West,0.756,1,1,0.75,1,16,First Round,No Playoff,Conference Final
+2004-2005,San Antonio Spurs,West,0.72,2,2,0.6,8,1,NBA Champion,Conference Semi-Final,NBA Champion
+2004-2005,Dallas Mavericks,West,0.707,3,4,0.85,3,10,Conference Final,First Round,Conference Semi-Final
+2004-2005,Seattle SuperSonics,West,0.634,4,6,0.45,2,27,No Playoff,No Playoff,Conference Semi-Final
+2004-2005,Houston Rockets,West,0.622,5,7,0.7,13,4,No Playoff,First Round,First Round
+2004-2005,Sacramento Kings,West,0.61,6,8,0.6,5,22,Conference Semi-Final,Conference Semi-Final,First Round
+2004-2005,Denver Nuggets,West,0.598,7,9,0.85,17,8,No Playoff,First Round,First Round
+2004-2005,Memphis Grizzlies,West,0.549,8,11,0.5,18,6,No Playoff,First Round,First Round
+2003-2004,Indiana Pacers,Est,0.744,1,1,0.75,8,3,First Round,First Round,Conference Final
+2003-2004,New Jersey Nets,Est,0.573,2,9,0.45,25,4,NBA Final,NBA Final,Conference Semi-Final
+2003-2004,Detroit Pistons,Est,0.659,3,6,0.8,15,2,Conference Semi-Final,Conference Final,NBA Champion
+2003-2004,Miami Heat,Est,0.512,4,12,0.8,18,9,No Playoff,No Playoff,Conference Semi-Final
+2003-2004,New Orlean Hornets,Est,0.5,5,14,0.4,14,12,Conference Semi-Final,First Round,First Round
+2003-2004,Milwaukee Bucks,Est,0.5,6,15,0.4,4,23,No Playoff,First Round,First Round
+2003-2004,New York Knicks,Est,0.476,7,17,0.6,20,14,No Playoff,No Playoff,First Round
+2003-2004,Boston Celtics,Est,0.439,8,20,0.5,19,16,Conference Final,Conference Semi-Final,First Round
+2003-2004,Minnesota Timberwolves,West,0.707,1,2,0.7,5,6,First Round,First Round,Conference Final
+2003-2004,Los Angeles Lakers,West,0.683,2,3,0.75,6,8,NBA Champion,Conference Semi-Final,NBA Final
+2003-2004,San Antonio Spurs,West,0.695,3,4,0.8,17,1,Conference Semi-Final,NBA Champion,Conference Semi-Final
+2003-2004,Sacramento Kings,West,0.671,4,5,0.45,2,20,Conference Final,Conference Semi-Final,Conference Semi-Final
+2003-2004,Dallas Mavericks,West,0.634,5,7,0.65,1,26,Conference Semi-Final,Conference Final,First Round
+2003-2004,Memphis Grizzlies,West,0.61,6,8,0.6,7,10,No Playoff,No Playoff,First Round
+2003-2004,Houston Rockets,West,0.549,7,10,0.45,24,5,No Playoff,No Playoff,First Round
+2003-2004,Denver Nuggets,West,0.524,8,11,0.5,9,13,No Playoff,No Playoff,First Round
+2002-2003,Detroit Pistons,Est,0.61,1,5,0.55,15,4,No Playoff,Conference Semi-Final,Conference Final
+2002-2003,New Jersey Nets,Est,0.598,2,8,0.55,20,1,No Playoff,NBA Final,NBA Final
+2002-2003,Indiana Pacers,Est,0.585,3,9,0.5,13,5,First Round,First Round,First Round
+2002-2003,Philadelphia Sixers,Est,0.585,4,10,0.6,11,11,NBA Final,First Round,Conference Semi-Final
+2002-2003,New Orlean Hornets,Est,0.573,5,12,0.6,16,7,Conference Semi-Final,Conference Semi-Final,First Round
+2002-2003,Boston Celtics,Est,0.537,6,14,0.4,24,8,No Playoff,Conference Final,Conference Semi-Final
+2002-2003,Milwaukee Bucks,Est,0.512,7,16,0.55,2,28,Conference Final,No Playoff,First Round
+2002-2003,Orlando Magic,Est,0.512,8,17,0.5,10,20,First Round,First Round,First Round
+2002-2003,San Antonio Spurs,West,0.732,1,1,0.8,9,3,Conference Final,Conference Semi-Final,NBA Champion
+2002-2003,Sacramento Kings,West,0.72,2,3,0.8,7,2,Conference Semi-Final,Conference Final,Conference Semi-Final
+2002-2003,Dallas Mavericks,West,0.732,3,2,0.6,1,9,Conference Semi-Final,Conference Semi-Final,Conference Final
+2002-2003,Minnesota Timberwolves,West,0.622,4,4,0.55,5,16,First Round,First Round,First Round
+2002-2003,Los Angeles Lakers,West,0.61,5,7,0.75,4,19,NBA Champion,NBA Champion,Conference Semi-Final
+2002-2003,Portland Blazers,West,0.61,6,6,0.5,8,14,First Round,First Round,First Round
+2002-2003,Utah Jazz,West,0.573,7,11,0.6,6,15,First Round,First Round,First Round
+2002-2003,Phoenix Suns,West,0.537,8,13,0.55,17,10,First Round,No Playoff,First Round
+2001-2002,New Jersey Nets,Est,0.634,1,5,0.65,17,1,No Playoff,No Playoff,NBA Final
+2001-2002,Detroit Pistons,Est,0.61,2,7,0.7,12,8,First Round,No Playoff,Conference Semi-Final
+2001-2002,Boston Celtics,Est,0.598,3,9,0.7,18,6,No Playoff,No Playoff,Conference Final
+2001-2002,Charlotte Hornets,Est,0.537,4,13,0.7,15,10,First Round,Conference Semi-Final,Conference Semi-Final
+2001-2002,Orlando Magic,Est,0.537,5,12,0.6,8,16,No Playoff,First Round,First Round
+2001-2002,Philadelphia Sixers,Est,0.524,6,14,0.5,23,4,Conference Semi-Final,NBA Final,First Round
+2001-2002,Toronto Raptors,Est,0.512,7,16,0.65,22,9,First Round,Conference Semi-Final,First Round
+2001-2002,Indiana Pacers,Est,0.512,8,15,0.6,16,11,NBA Final,First Round,First Round
+2001-2002,Sacramento Kings,West,0.744,1,1,0.8,5,5,First Round,Conference Semi-Final,Conference Final
+2001-2002,San Antonio Spurs,West,0.707,2,2,0.85,9,2,First Round,Conference Final,Conference Semi-Final
+2001-2002,Los Angeles Lakers,West,0.707,3,3,0.7,2,7,NBA Champion,NBA Champion,NBA Champion
+2001-2002,Dallas Mavericks,West,0.695,4,4,0.65,1,24,No Playoff,Conference Semi-Final,Conference Semi-Final
+2001-2002,Minnesota Timberwolves,West,0.61,5,6,0.5,3,15,First Round,First Round,First Round
+2001-2002,Portland Blazers,West,0.598,6,8,0.55,6,13,Conference Final,First Round,First Round
+2001-2002,Seattle SuperSonics,West,0.549,7,10,0.5,4,17,First Round,No Playoff,First Round
+2001-2002,Utah Jazz,West,0.537,8,11,0.5,10,14,Conference Semi-Final,First Round,First Round
+2000-2001,Philadelphia Sixers,Est,0.683,1,3,0.5,12,5,Conference Semi-Final,Conference Semi-Final,NBA Final
+2000-2001,Milwaukee Bucks,Est,0.634,2,7,0.7,1,19,First Round,First Round,Conference Final
+2000-2001,Miami Heat,Est,0.61,3,10,0.65,20,4,First Round,Conference Semi-Final,First Round
+2000-2001,New York Knicks,Est,0.585,4,11,0.6,19,3,NBA Final,Conference Final,First Round
+2000-2001,Toronto Raptors,Est,0.573,5,13,0.7,8,14,No Playoff,First Round,Conference Semi-Final
+2000-2001,Charlotte Hornets,Est,0.561,6,14,0.55,16,7,No Playoff,First Round,Conference Semi-Final
+2000-2001,Orlando Magic,Est,0.524,7,17,0.45,14,10,First Round,No Playoff,First Round
+2000-2001,Indiana Pacers,Est,0.5,8,18,0.7,15,11,Conference Final,NBA Final,First Round
+2000-2001,San Antonio Spurs,West,0.707,1,1,0.75,6,1,NBA Champion,First Round,Conference Final
+2000-2001,Los Angeles Lakers,West,0.683,2,2,0.75,2,21,Conference Semi-Final,NBA Champion,NBA Champion
+2000-2001,Sacramento Kings,West,0.671,3,4,0.6,10,6,First Round,First Round,Conference Semi-Final
+2000-2001,Dallas Mavericks,West,0.646,4,6,0.7,4,13,No Playoff,No Playoff,Conference Semi-Final
+2000-2001,Utah Jazz,West,0.646,5,5,0.5,3,12,Conference Semi-Final,Conference Semi-Final,First Round
+2000-2001,Phoenix Suns,West,0.622,6,8,0.7,22,2,First Round,Conference Semi-Final,First Round
+2000-2001,Portland Blazers,West,0.61,7,9,0.4,7,9,Conference Final,Conference Final,First Round
+2000-2001,Minnesota Timberwolves,West,0.573,8,12,0.5,11,15,First Round,First Round,First Round
+1999-2000,Indiana Pacers,Est,0.683,1,3,0.65,1,13,Conference Final,Conference Final,NBA Final
+1999-2000,Miami Heat,Est,0.634,2,7,0.65,16,7,First Round,First Round,Conference Semi-Final
+1999-2000,New York Knicks,Est,0.61,3,9,0.6,23,5,Conference Semi-Final,NBA Final,Conference Final
+1999-2000,Philadelphia Sixers,Est,0.598,4,11,0.7,25,4,No Playoff,Conference Semi-Final,Conference Semi-Final
+1999-2000,Charlotte Hornets,Est,0.598,5,10,0.75,18,8,Conference Semi-Final,No Playoff,First Round
+1999-2000,Toronto Raptors,Est,0.549,6,13,0.45,14,16,No Playoff,No Playoff,First Round
+1999-2000,Milwaukee Bucks,Est,0.512,7,16,0.65,2,26,No Playoff,First Round,First Round
+1999-2000,Detroit Pistons,Est,0.512,8,15,0.55,4,20,No Playoff,First Round,First Round
+1999-2000,Los Angeles Lakers,West,0.817,1,1,0.8,6,1,Conference Final,Conference Semi-Final,NBA Champion
+1999-2000,Utah Jazz,West,0.671,2,4,0.65,5,11,NBA Final,Conference Semi-Final,Conference Semi-Final
+1999-2000,Portland Blazers,West,0.72,3,2,0.6,3,6,First Round,Conference Final,Conference Final
+1999-2000,Phoenix Suns,West,0.646,4,6,0.7,17,3,First Round,First Round,Conference Semi-Final
+1999-2000,San Antonio Spurs,West,0.646,5,5,0.65,11,2,Conference Semi-Final,NBA Champion,First Round
+1999-2000,Minnesota Timberwolves,West,0.61,6,8,0.65,8,12,First Round,First Round,First Round
+1999-2000,Seattle SuperSonics,West,0.549,7,12,0.4,9,15,Conference Semi-Final,No Playoff,First Round
+1999-2000,Sacramento Kings,West,0.537,8,14,0.4,12,10,No Playoff,First Round,First Round
+1998-1999,Indiana Pacers,Est,0.66,1,4,0.65,1,24,No Playoff,Conference Final,Conference Final
+1998-1999,Miami Heat,Est,0.66,2,5,0.7,7,8,Conference Final,First Round,First Round
+1998-1999,Orlando Magic,Est,0.66,3,6,0.6,23,2,First Round,No Playoff,First Round
+1998-1999,Atlanta Hawks,Est,0.62,4,8,0.6,19,3,Conference Semi-Final,First Round,Conference Semi-Final
+1998-1999,Detroit Pistons,Est,0.58,5,10,0.55,10,9,First Round,No Playoff,First Round
+1998-1999,Philadelphia Sixers,Est,0.56,6,11,0.6,22,6,No Playoff,No Playoff,Conference Semi-Final
+1998-1999,Milwaukee Bucks,Est,0.56,7,12,0.5,8,18,No Playoff,No Playoff,First Round
+1998-1999,New York Knicks,Est,0.54,8,14,0.55,26,4,Conference Semi-Final,Conference Semi-Final,NBA Final
+1998-1999,San Antonio Spurs,West,0.74,1,1,0.85,11,1,No Playoff,Conference Semi-Final,NBA Champion
+1998-1999,Utah Jazz,West,0.74,2,2,0.75,4,7,NBA Final,NBA Final,Conference Semi-Final
+1998-1999,Portland Blazers,West,0.7,3,3,0.55,9,5,First Round,First Round,Conference Final
+1998-1999,Los Angeles Lakers,West,0.62,4,7,0.6,2,23,Conference Semi-Final,Conference Final,Conference Semi-Final
+1998-1999,Houston Rockets,West,0.62,5,9,0.5,5,15,Conference Final,First Round,First Round
+1998-1999,Phoenix Suns,West,0.54,6,13,0.65,3,19,First Round,First Round,First Round
+1998-1999,Sacramento Kings,West,0.54,7,15,0.466666667,14,16,No Playoff,No Playoff,First Round
+1998-1999,Minnesota Timberwolves,West,0.5,8,18,0.4,17,10,First Round,First Round,First Round
+1997-1998,Chicago Bulls,Est,0.756,1,1,0.8,7,3,NBA Champion,NBA Champion,NBA Champion
+1997-1998,Miami Heat,Est,0.671,2,8,0.6,9,7,First Round,Conference Final,First Round
+1997-1998,Indiana Pacers,Est,0.707,3,5,0.75,4,6,First Round,No Playoff,Conference Final
+1997-1998,Charlotte Hornets,Est,0.622,4,9,0.6,12,16,No Playoff,First Round,Conference Semi-Final
+1997-1998,Atlanta Hawks,Est,0.61,5,10,0.65,6,13,Conference Semi-Final,Conference Semi-Final,First Round
+1997-1998,Cleveland Cavaliers,Est,0.573,6,11,0.7,24,1,First Round,No Playoff,First Round
+1997-1998,New Jersey Nets,Est,0.524,7,15,0.5,5,21,No Playoff,No Playoff,First Round
+1997-1998,New York Knicks,Est,0.524,8,14,0.4,20,4,Conference Semi-Final,Conference Semi-Final,Conference Semi-Final
+1997-1998,Utah Jazz,West,0.756,1,2,0.8,1,15,Conference Final,NBA Final,NBA Final
+1997-1998,Los Angeles Lakers,West,0.744,2,3,0.85,2,9,First Round,Conference Semi-Final,Conference Final
+1997-1998,Seattle SuperSonics,West,0.744,3,4,0.7,3,12,NBA Final,Conference Semi-Final,Conference Semi-Final
+1997-1998,San Antonio Spurs,West,0.683,4,6,0.7,16,2,Conference Semi-Final,No Playoff,Conference Semi-Final
+1997-1998,Phoenix Suns,West,0.683,5,7,0.75,11,5,First Round,First Round,First Round
+1997-1998,Portland Blazers,West,0.561,6,12,0.55,17,8,First Round,First Round,First Round
+1997-1998,Minnesota Timberwolves,West,0.549,7,13,0.6,8,23,No Playoff,First Round,First Round
+1997-1998,Houston Rockets,West,0.5,8,18,0.5,10,25,Conference Semi-Final,Conference Final,First Round
+1996-1997,Chicago Bulls,Est,0.841,1,1,0.75,1,3,Conference Semi-Final,NBA Champion,NBA Champion
+1996-1997,Miami Heat,Est,0.744,2,3,0.8,12,1,No Playoff,First Round,Conference Final
+1996-1997,New York Knicks,Est,0.695,3,6,0.55,25,2,Conference Semi-Final,Conference Semi-Final,Conference Semi-Final
+1996-1997,Atlanta Hawks,Est,0.683,4,7,0.65,7,4,First Round,Conference Semi-Final,Conference Semi-Final
+1996-1997,Detroit Pistons,Est,0.659,5,9,0.45,5,11,No Playoff,First Round,First Round
+1996-1997,Charlotte Hornets,Est,0.659,6,10,0.7,4,22,First Round,No Playoff,First Round
+1996-1997,Orlando Magic,Est,0.549,7,12,0.55,16,14,NBA Final,Conference Final,First Round
+1996-1997,Washington Bullets,Est,0.537,8,13,0.75,13,12,No Playoff,No Playoff,First Round
+1996-1997,Utah Jazz,West,0.78,1,2,0.95,2,10,First Round,Conference Final,NBA Final
+1996-1997,Houston Rockets,West,0.695,2,4,0.75,8,9,NBA Champion,Conference Semi-Final,Conference Final
+1996-1997,Seattle SuperSonics,West,0.695,3,5,0.65,3,6,First Round,NBA Final,Conference Semi-Final
+1996-1997,Los Angeles Lakers,West,0.683,4,8,0.7,9,8,Conference Semi-Final,First Round,Conference Semi-Final
+1996-1997,Portland Blazers,West,0.598,5,11,0.75,10,7,First Round,First Round,First Round
+1996-1997,Phoenix Suns,West,0.488,6,15,0.8,6,19,Conference Semi-Final,First Round,First Round
+1996-1997,Minnesota Timberwolves,West,0.488,7,16,0.45,17,15,No Playoff,No Playoff,First Round
+1996-1997,Los Angeles Clippers,West,0.439,8,18,0.45,18,16,No Playoff,No Playoff,First Round
+1995-1996,Chicago Bulls,Est,0.878,1,1,0.85,1,1,Conference Semi-Final,Conference Semi-Final,NBA Champion
+1995-1996,Orlando Magic,Est,0.732,2,3,0.65,3,12,First Round,NBA Final,Conference Final
+1995-1996,Indiana Pacers,Est,0.634,3,7,0.65,6,13,Conference Final,Conference Final,First Round
+1995-1996,Cleveland Cavaliers,Est,0.573,4,9,0.6,9,11,First Round,First Round,First Round
+1995-1996,New York Knicks,Est,0.573,5,10,0.55,19,5,NBA Final,Conference Semi-Final,Conference Semi-Final
+1995-1996,Atlanta Hawks,Est,0.561,6,12,0.55,11,16,Conference Semi-Final,First Round,Conference Semi-Final
+1995-1996,Detroit Pistons,Est,0.561,7,11,0.55,15,7,No Playoff,No Playoff,First Round
+1995-1996,Miami Heat,Est,0.512,8,14,0.6,23,6,First Round,No Playoff,First Round
+1995-1996,Seattle SuperSonics,West,0.78,1,2,0.8,7,2,First Round,First Round,NBA Final
+1995-1996,San Antonio Spurs,West,0.72,2,4,0.75,8,3,First Round,Conference Final,Conference Semi-Final
+1995-1996,Utah Jazz,West,0.671,3,5,0.6,2,8,Conference Final,First Round,Conference Final
+1995-1996,Los Angeles Lakers,West,0.646,4,6,0.65,4,10,No Playoff,Conference Semi-Final,First Round
+1995-1996,Houston Rockets,West,0.585,5,8,0.4,12,14,NBA Champion,NBA Champion,Conference Semi-Final
+1995-1996,Portland Blazers,West,0.537,6,13,0.8,20,4,First Round,First Round,First Round
+1995-1996,Phoenix Suns,West,0.5,7,15,0.5,10,20,Conference Semi-Final,Conference Semi-Final,First Round
+1995-1996,Sacramento Kings,West,0.476,8,18,0.55,18,19,No Playoff,No Playoff,First Round
+1994-1995,Orlando Magic,Est,0.695,1,5,0.45,1,13,No Playoff,First Round,NBA Final
+1994-1995,Indiana Pacers,Est,0.634,2,7,0.7,6,7,First Round,Conference Final,Conference Final
+1994-1995,New York Knicks,Est,0.671,3,6,0.7,16,1,Conference Final,NBA Final,Conference Semi-Final
+1994-1995,Charlotte Hornets,Est,0.61,4,8,0.55,8,9,Conference Semi-Final,No Playoff,First Round
+1994-1995,Chicago Bulls,Est,0.573,5,10,0.8,10,2,NBA Champion,Conference Semi-Final,Conference Semi-Final
+1994-1995,Cleveland Cavaliers,Est,0.524,6,13,0.35,20,3,Conference Semi-Final,First Round,First Round
+1994-1995,Atlanta Hawks,Est,0.512,7,14,0.55,18,4,First Round,Conference Semi-Final,First Round
+1994-1995,Boston Celtics,Est,0.427,8,18,0.55,13,21,First Round,No Playoff,First Round
+1994-1995,San Antonio Spurs,West,0.756,1,1,0.9,5,5,Conference Semi-Final,First Round,Conference Final
+1994-1995,Phoenix Suns,West,0.72,2,3,0.65,4,20,NBA Final,Conference Semi-Final,Conference Semi-Final
+1994-1995,Utah Jazz,West,0.732,3,2,0.7,3,8,First Round,Conference Final,First Round
+1994-1995,Seattle SuperSonics,West,0.695,4,4,0.7,2,10,Conference Final,First Round,First Round
+1994-1995,Los Angeles Lakers,West,0.585,5,9,0.5,11,16,First Round,No Playoff,Conference Semi-Final
+1994-1995,Houston Rockets,West,0.573,6,11,0.45,7,12,Conference Semi-Final,NBA Champion,NBA Champion
+1994-1995,Portland Blazers,West,0.537,7,12,0.45,9,6,First Round,First Round,First Round
+1994-1995,Denver Nuggets,West,0.5,8,15,0.6,12,14,No Playoff,Conference Semi-Final,First Round
+1993-1994,Atlanta Hawks,Est,0.695,1,4,0.7,13,3,No Playoff,First Round,Conference Semi-Final
+1993-1994,New York Knicks,Est,0.695,2,3,0.7,16,1,Conference Semi-Final,Conference Final,NBA Final
+1993-1994,Chicago Bulls,Est,0.671,3,7,0.75,14,6,NBA Champion,NBA Champion,Conference Semi-Final
+1993-1994,Orlando Magic,Est,0.61,4,9,0.65,3,15,No Playoff,No Playoff,First Round
+1993-1994,Cleveland Cavaliers,Est,0.573,5,11,0.55,6,11,Conference Final,Conference Semi-Final,First Round
+1993-1994,Indiana Pacers,Est,0.573,6,12,0.7,11,8,First Round,First Round,Conference Final
+1993-1994,New Jersey Nets,Est,0.549,7,14,0.65,12,9,First Round,First Round,First Round
+1993-1994,Miami Heat,Est,0.512,8,15,0.35,5,14,First Round,No Playoff,First Round
+1993-1994,Seattle SuperSonics,West,0.768,1,1,0.85,2,4,Conference Semi-Final,Conference Final,First Round
+1993-1994,Houston Rockets,West,0.707,2,2,0.65,15,2,No Playoff,Conference Semi-Final,NBA Champion
+1993-1994,Phoenix Suns,West,0.683,3,5,0.75,1,16,Conference Semi-Final,NBA Final,Conference Semi-Final
+1993-1994,San Antonio Spurs,West,0.671,4,6,0.55,4,10,First Round,Conference Semi-Final,First Round
+1993-1994,Utah Jazz,West,0.646,5,8,0.55,7,7,Conference Final,First Round,Conference Final
+1993-1994,Golden State Warriors,West,0.61,6,10,0.7,10,13,First Round,No Playoff,First Round
+1993-1994,Portland Blazers,West,0.573,7,13,0.45,9,12,NBA Final,First Round,First Round
+1993-1994,Denver Nuggets,West,0.512,8,16,0.55,20,5,No Playoff,No Playoff,Conference Semi-Final
+1992-1993,New York Knicks,Est,0.732,1,2,0.8,22,1,First Round,Conference Semi-Final,Conference Final
+1992-1993,Chicago Bulls,Est,0.695,2,3,0.75,2,8,NBA Champion,NBA Champion,NBA Champion
+1992-1993,Cleveland Cavaliers,Est,0.659,3,6,0.7,3,6,No Playoff,Conference Final,Conference Semi-Final
+1992-1993,Boston Celtics,Est,0.585,4,9,0.7,12,14,Conference Semi-Final,Conference Semi-Final,First Round
+1992-1993,Charlotte Hornets,Est,0.537,5,11,0.55,7,19,No Playoff,No Playoff,Conference Semi-Final
+1992-1993,Atlanta Hawks,Est,0.524,6,13,0.6,10,21,First Round,No Playoff,First Round
+1992-1993,New Jersey Nets,Est,0.524,7,12,0.35,19,5,No Playoff,First Round,First Round
+1992-1993,Orlando Magic,Est,0.5,8,15,0.6,13,12,No Playoff,No Playoff,No Playoff
+1992-1993,Phoenix Suns,West,0.756,1,1,0.7,1,9,First Round,Conference Semi-Final,NBA Final
+1992-1993,Houston Rockets,West,0.671,2,5,0.7,6,2,First Round,No Playoff,Conference Semi-Final
+1992-1993,Seattle SuperSonics,West,0.671,3,4,0.65,4,3,First Round,Conference Semi-Final,Conference Final
+1992-1993,Portland Blazers,West,0.622,4,7,0.7,14,4,Conference Final,NBA Final,First Round
+1992-1993,San Antonio Spurs,West,0.598,5,8,0.45,8,10,First Round,First Round,Conference Semi-Final
+1992-1993,Utah Jazz,West,0.573,6,10,0.55,9,13,Conference Semi-Final,Conference Final,First Round
+1992-1993,Los Angeles Clippers,West,0.5,7,16,0.5,18,11,No Playoff,First Round,First Round
+1992-1993,Los Angeles Lakers,West,0.476,8,18,0.3,16,16,NBA Final,First Round,First Round
+1991-1992,Chicago Bulls,Est,0.817,1,1,0.85,1,5,Conference Final,NBA Champion,NBA Champion
+1991-1992,Boston Celtics,Est,0.622,2,8,0.8,9,9,First Round,Conference Semi-Final,Conference Semi-Final
+1991-1992,New York Knicks,Est,0.622,3,7,0.6,12,3,Conference Semi-Final,First Round,Conference Semi-Final
+1991-1992,Cleveland Cavaliers,Est,0.695,4,3,0.75,2,11,First Round,No Playoff,Conference Final
+1991-1992,Detroit Pistons,Est,0.585,5,9,0.55,14,6,NBA Champion,Conference Final,First Round
+1991-1992,New Jersey Nets,Est,0.488,6,16,0.65,18,13,No Playoff,No Playoff,First Round
+1991-1992,Indiana Pacers,Est,0.488,7,15,0.6,6,20,First Round,First Round,First Round
+1991-1992,Miami Heat,Est,0.463,8,18,0.5,19,26,No Playoff,No Playoff,First Round
+1991-1992,Portland Blazers,West,0.695,1,2,0.65,7,2,NBA Final,Conference Final,NBA Final
+1991-1992,Golden State Warriors,West,0.671,2,5,0.65,3,21,No Playoff,Conference Semi-Final,First Round
+1991-1992,Utah Jazz,West,0.671,3,4,0.7,4,7,First Round,Conference Semi-Final,Conference Final
+1991-1992,Phoenix Suns,West,0.646,4,6,0.7,5,8,Conference Final,First Round,Conference Semi-Final
+1991-1992,San Antonio Spurs,West,0.573,5,10,0.45,15,1,Conference Semi-Final,First Round,First Round
+1991-1992,Seattle SuperSonics,West,0.573,6,11,0.65,8,16,No Playoff,First Round,Conference Semi-Final
+1991-1992,Los Angeles Clippers,West,0.549,7,12,0.65,21,4,No Playoff,No Playoff,First Round
+1991-1992,Los Angeles Lakers,West,0.524,8,13,0.5,13,17,Conference Semi-Final,NBA Final,First Round
+1990-1991,Chicago Bulls,Est,0.744,1,2,0.7,1,6,Conference Final,Conference Final,NBA Champion
+1990-1991,Boston Celtics,Est,0.683,2,4,0.5,4,10,First Round,First Round,Conference Semi-Final
+1990-1991,Detroit Pistons,Est,0.61,3,9,0.55,12,4,NBA Champion,NBA Champion,Conference Final
+1990-1991,Milwaukee Bucks,Est,0.585,4,10,0.55,10,12,Conference Semi-Final,First Round,First Round
+1990-1991,Philadelphia Sixers,Est,0.537,5,12,0.5,13,16,First Round,Conference Semi-Final,Conference Semi-Final
+1990-1991,Atlanta Hawks,Est,0.524,6,13,0.4,8,20,First Round,No Playoff,First Round
+1990-1991,Indiana Pacers,Est,0.5,7,15,0.6,6,26,No Playoff,First Round,First Round
+1990-1991,New York Knicks,Est,0.476,8,16,0.45,16,13,Conference Semi-Final,Conference Semi-Final,First Round
+1990-1991,Portland Blazers,West,0.768,1,1,0.85,2,3,First Round,NBA Final,Conference Final
+1990-1991,San Antonio Spurs,West,0.671,2,6,0.7,14,1,No Playoff,Conference Semi-Final,First Round
+1990-1991,Los Angeles Lakers,West,0.707,3,3,0.7,5,5,NBA Final,Conference Semi-Final,NBA Final
+1990-1991,Phoenix Suns,West,0.671,4,5,0.6,3,8,Conference Final,Conference Final,First Round
+1990-1991,Utah Jazz,West,0.659,5,7,0.65,11,7,First Round,First Round,Conference Semi-Final
+1990-1991,Houston Rockets,West,0.634,6,8,0.7,15,2,First Round,First Round,First Round
+1990-1991,Golden State Warriors,West,0.537,7,11,0.55,7,22,Conference Semi-Final,No Playoff,Conference Semi-Final
+1990-1991,Seattle SuperSonics,West,0.5,8,14,0.55,9,18,Conference Semi-Final,No Playoff,First Round
+1989-1990,Detroit Pistons,Est,0.72,1,3,0.6,11,2,NBA Final,NBA Champion,NBA Champion
+1989-1990,Philadelphia Sixers,Est,0.646,2,8,0.75,2,15,No Playoff,First Round,Conference Semi-Final
+1989-1990,Chicago Bulls,Est,0.671,3,6,0.75,5,18,Conference Semi-Final,Conference Final,Conference Final
+1989-1990,Boston Celtics,Est,0.634,4,9,0.8,7,12,Conference Final,First Round,First Round
+1989-1990,New York Knicks,Est,0.549,5,11,0.3,12,13,First Round,Conference Semi-Final,Conference Semi-Final
+1989-1990,Milwaukee Bucks,Est,0.537,6,12,0.55,18,14,First Round,Conference Semi-Final,First Round
+1989-1990,Cleveland Cavaliers,Est,0.512,7,15,0.7,19,8,First Round,First Round,First Round
+1989-1990,Indiana Pacers,Est,0.512,8,14,0.55,6,24,No Playoff,No Playoff,First Round
+1989-1990,Los Angeles Lakers,West,0.768,1,1,0.8,1,10,NBA Champion,NBA Final,Conference Semi-Final
+1989-1990,San Antonio Spurs,West,0.683,2,2,0.75,15,3,First Round,No Playoff,Conference Semi-Final
+1989-1990,Portland Blazers,West,0.72,3,4,0.75,9,4,First Round,First Round,NBA Final
+1989-1990,Utah Jazz,West,0.671,4,5,0.5,10,5,Conference Semi-Final,First Round,First Round
+1989-1990,Phoenix Suns,West,0.659,5,7,0.55,4,6,No Playoff,Conference Final,Conference Final
+1989-1990,Dallas Mavericks,West,0.573,6,10,0.65,17,9,Conference Final,No Playoff,First Round
+1989-1990,Denver Nuggets,West,0.524,7,13,0.45,14,7,Conference Semi-Final,First Round,First Round
+1989-1990,Houston Rockets,West,0.5,8,16,0.55,22,1,First Round,First Round,First Round
+1988-1989,Detroit Pistons,Est,0.768,1,1,0.9,8,3,Conference Final,NBA Final,NBA Champion
+1988-1989,New York Knicks,Est,0.634,2,6,0.5,6,11,No Playoff,First Round,Conference Semi-Final
+1988-1989,Cleveland Cavaliers,Est,0.695,3,2,0.6,9,2,No Playoff,First Round,First Round
+1988-1989,Atlanta Hawks,Est,0.634,4,5,0.75,4,9,Conference Semi-Final,Conference Semi-Final,First Round
+1988-1989,Milwaukee Bucks,Est,0.598,5,8,0.4,10,6,Conference Semi-Final,First Round,Conference Semi-Final
+1988-1989,Chicago Bulls,Est,0.573,6,10,0.5,12,12,First Round,Conference Semi-Final,Conference Final
+1988-1989,Philadelphia Sixers,Est,0.561,7,11,0.6,3,24,First Round,No Playoff,First Round
+1988-1989,Boston Celtics,Est,0.512,8,15,0.5,7,20,NBA Final,Conference Final,First Round
+1988-1989,Los Angeles Lakers,West,0.695,1,3,0.65,1,7,NBA Champion,NBA Champion,NBA Final
+1988-1989,Utah Jazz,West,0.622,2,7,0.6,17,1,First Round,Conference Semi-Final,First Round
+1988-1989,Phoenix Suns,West,0.671,3,4,0.8,2,5,No Playoff,No Playoff,Conference Final
+1988-1989,Seattle SuperSonics,West,0.573,4,9,0.55,5,16,Conference Final,First Round,Conference Semi-Final
+1988-1989,Houston Rockets,West,0.549,5,12,0.55,19,4,Conference Semi-Final,First Round,First Round
+1988-1989,Denver Nuggets,West,0.537,6,13,0.6,13,8,First Round,Conference Semi-Final,First Round
+1988-1989,Golden State Warriors,West,0.524,7,14,0.4,15,10,Conference Semi-Final,No Playoff,Conference Semi-Final
+1988-1989,Portland Blazers,West,0.476,8,17,0.4,11,13,First Round,First Round,First Round
+1987-1988,Boston Celtics,Est,0.695,1,2,0.7,1,17,NBA Champion,NBA Final,Conference Final
+1987-1988,Detroit Pistons,Est,0.659,2,3,0.6,6,2,First Round,Conference Final,NBA Final
+1987-1988,Atlanta Hawks,Est,0.61,3,7,0.55,5,14,Conference Semi-Final,Conference Semi-Final,Conference Semi-Final
+1987-1988,Chicago Bulls,Est,0.61,4,8,0.7,9,3,First Round,First Round,Conference Semi-Final
+1987-1988,Milwaukee Bucks,Est,0.512,5,13,0.35,12,13,Conference Final,Conference Semi-Final,First Round
+1987-1988,Cleveland Cavaliers,Est,0.512,6,12,0.6,15,5,No Playoff,No Playoff,First Round
+1987-1988,Washington Bullets,Est,0.463,7,15,0.5,19,9,First Round,First Round,First Round
+1987-1988,New York Knicks,Est,0.463,8,14,0.55,20,7,No Playoff,No Playoff,First Round
+1987-1988,Los Angeles Lakers,West,0.756,1,1,0.6,2,8,Conference Final,NBA Champion,NBA Champion
+1987-1988,Denver Nuggets,West,0.659,2,4,0.65,8,6,Conference Semi-Final,First Round,Conference Semi-Final
+1987-1988,Dallas Mavericks,West,0.646,3,5,0.55,3,15,Conference Semi-Final,First Round,Conference Final
+1987-1988,Portland Blazers,West,0.646,4,6,0.65,4,10,First Round,First Round,First Round
+1987-1988,Utah Jazz,West,0.573,5,9,0.65,16,1,First Round,First Round,Conference Semi-Final
+1987-1988,Houston Rockets,West,0.561,6,10,0.4,13,4,NBA Final,Conference Semi-Final,First Round
+1987-1988,Seattle SuperSonics,West,0.537,7,11,0.55,7,16,No Playoff,Conference Final,First Round
+1987-1988,San Antonio Spurs,West,0.378,8,18,0.4,11,22,First Round,No Playoff,First Round
+1986-1987,Boston Celtics,Est,0.72,1,2,0.65,3,8,NBA Final,NBA Champion,NBA Final
+1986-1987,Atlanta Hawks,Est,0.695,2,3,0.8,4,2,No Playoff,Conference Semi-Final,Conference Semi-Final
+1986-1987,Detroit Pistons,Est,0.634,3,5,0.5,9,5,Conference Semi-Final,First Round,Conference Final
+1986-1987,Milwaukee Bucks,Est,0.61,4,6,0.6,7,4,Conference Semi-Final,Conference Final,Conference Semi-Final
+1986-1987,Philadelphia Sixers,Est,0.549,5,8,0.55,13,13,Conference Final,Conference Semi-Final,First Round
+1986-1987,Washington Bullets,Est,0.512,6,11,0.45,18,10,First Round,First Round,First Round
+1986-1987,Indiana Pacers,Est,0.5,7,13,0.6,16,9,No Playoff,No Playoff,First Round
+1986-1987,Chicago Bulls,Est,0.488,8,14,0.4,12,11,First Round,First Round,First Round
+1986-1987,Los Angeles Lakers,West,0.793,1,1,0.85,1,7,NBA Champion,Conference Final,NBA Champion
+1986-1987,Dallas Mavericks,West,0.671,2,4,0.75,2,14,First Round,Conference Semi-Final,First Round
+1986-1987,Portland Blazers,West,0.598,3,7,0.55,5,12,Conference Semi-Final,First Round,First Round
+1986-1987,Utah Jazz,West,0.537,4,9,0.55,21,1,Conference Semi-Final,First Round,First Round
+1986-1987,Houston Rockets,West,0.512,5,10,0.5,15,3,First Round,NBA Final,Conference Semi-Final
+1986-1987,Golden State Warriors,West,0.512,6,12,0.6,10,21,No Playoff,No Playoff,Conference Semi-Final
+1986-1987,Seattle SuperSonics,West,0.476,7,15,0.35,6,16,No Playoff,No Playoff,Conference Final
+1986-1987,Denver Nuggets,West,0.451,8,16,0.6,8,15,Conference Final,Conference Semi-Final,First Round
+1985-1986,Boston Celtics,Est,0.817,1,1,0.85,3,2,NBA Champion,NBA Final,NBA Champion
+1985-1986,Milwaukee Bucks,Est,0.695,2,3,0.7,4,1,Conference Final,Conference Semi-Final,Conference Final
+1985-1986,Philadelphia Sixers,Est,0.659,3,4,0.75,9,11,First Round,Conference Final,Conference Semi-Final
+1985-1986,Atlanta Hawks,Est,0.61,4,6,0.65,11,6,First Round,No Playoff,Conference Semi-Final
+1985-1986,Detroit Pistons,Est,0.561,5,8,0.5,6,15,First Round,Conference Semi-Final,First Round
+1985-1986,New Jersey Nets,Est,0.476,6,12,0.35,18,12,Conference Semi-Final,First Round,First Round
+1985-1986,Washington Bullets,Est,0.476,7,13,0.5,21,4,First Round,First Round,First Round
+1985-1986,Chicago Bulls,Est,0.366,8,19,0.45,8,23,No Playoff,First Round,First Round
+1985-1986,Los Angeles Lakers,West,0.756,1,2,0.8,1,8,NBA Final,NBA Champion,Conference Final
+1985-1986,Houston Rockets,West,0.622,2,5,0.65,5,14,No Playoff,First Round,NBA Final
+1985-1986,Denver Nuggets,West,0.573,3,7,0.5,12,10,First Round,Conference Final,Conference Semi-Final
+1985-1986,Dallas Mavericks,West,0.537,4,9,0.6,2,20,Conference Semi-Final,First Round,Conference Semi-Final
+1985-1986,Utah Jazz,West,0.512,5,10,0.55,20,3,Conference Semi-Final,Conference Semi-Final,First Round
+1985-1986,Portland Blazers,West,0.488,6,11,0.55,7,16,First Round,Conference Semi-Final,First Round
+1985-1986,Sacramento Kings,West,0.451,7,14,0.45,14,19,First Round,No Playoff,First Round
+1985-1986,San Antonio Spurs,West,0.427,8,15,0.25,13,18,No Playoff,First Round,First Round
+1984-1985,Boston Celtics,Est,0.768,1,1,0.7,2,5,Conference Semi-Final,NBA Champion,NBA Final
+1984-1985,Milwaukee Bucks,Est,0.72,2,3,0.8,6,2,Conference Final,Conference Final,Conference Semi-Final
+1984-1985,Philadelphia Sixers,Est,0.707,3,4,0.55,3,11,NBA Champion,First Round,Conference Final
+1984-1985,Detroit Pistons,Est,0.561,4,7,0.6,10,9,No Playoff,First Round,Conference Semi-Final
+1984-1985,New Jersey Nets,Est,0.512,5,10,0.5,12,12,First Round,Conference Semi-Final,First Round
+1984-1985,Washington Bullets,Est,0.488,6,13,0.45,20,3,No Playoff,First Round,First Round
+1984-1985,Chicago Bulls,Est,0.463,7,14,0.4,11,19,No Playoff,No Playoff,First Round
+1984-1985,Cleveland Cavaliers,Est,0.439,8,15,0.55,16,16,No Playoff,No Playoff,First Round
+1984-1985,Los Angeles Lakers,West,0.756,1,2,0.9,1,8,NBA Final,NBA Final,NBA Champion
+1984-1985,Denver Nuggets,West,0.634,2,5,0.55,5,15,Conference Semi-Final,First Round,Conference Final
+1984-1985,Houston Rockets,West,0.585,3,6,0.6,13,4,No Playoff,No Playoff,First Round
+1984-1985,Dallas Mavericks,West,0.537,4,8,0.5,4,18,No Playoff,Conference Semi-Final,First Round
+1984-1985,Portland Blazers,West,0.512,5,9,0.65,7,7,Conference Semi-Final,First Round,Conference Semi-Final
+1984-1985,San Antonio Spurs,West,0.5,6,11,0.5,8,17,Conference Final,No Playoff,First Round
+1984-1985,Utah Jazz,West,0.5,7,12,0.6,21,1,No Playoff,Conference Semi-Final,Conference Semi-Final
+1984-1985,Phoenix Suns,West,0.439,8,16,0.35,19,6,First Round,Conference Final,First Round
+1983-1984,Boston Celtics,Est,0.756,1,1,0.75,5,3,Conference Final,Conference Semi-Final,NBA Champion
+1983-1984,Milwaukee Bucks,Est,0.61,2,4,0.6,12,2,Conference Semi-Final,Conference Final,Conference Final
+1983-1984,Philadelphia Sixers,Est,0.634,3,3,0.7,14,4,NBA Final,NBA Champion,First Round
+1983-1984,Detroit Pistons,Est,0.598,4,5,0.65,1,13,No Playoff,No Playoff,First Round
+1983-1984,New York Knicks,Est,0.573,5,7,0.5,13,1,No Playoff,Conference Semi-Final,Conference Semi-Final
+1983-1984,New Jersey Nets,Est,0.549,6,8,0.6,16,5,First Round,First Round,Conference Semi-Final
+1983-1984,Atlanta Hawks,Est,0.488,7,13,0.45,17,7,First Round,First Round,First Round
+1983-1984,Washington Bullets,Est,0.427,8,18,0.4,21,9,Conference Semi-Final,No Playoff,First Round
+1983-1984,Los Angeles Lakers,West,0.659,1,2,0.65,6,8,NBA Champion,NBA Final,NBA Final
+1983-1984,Utah Jazz,West,0.549,2,9,0.5,10,12,No Playoff,No Playoff,Conference Semi-Final
+1983-1984,Portland Blazers,West,0.585,3,6,0.5,3,11,No Playoff,Conference Semi-Final,First Round
+1983-1984,Dallas Mavericks,West,0.524,4,10,0.5,7,20,No Playoff,No Playoff,Conference Semi-Final
+1983-1984,Seattle SuperSonics,West,0.512,5,11,0.5,11,16,Conference Semi-Final,First Round,First Round
+1983-1984,Phoenix Suns,West,0.5,6,12,0.6,9,15,Conference Semi-Final,First Round,Conference Final
+1983-1984,Denver Nuggets,West,0.463,7,14,0.55,4,22,First Round,Conference Semi-Final,First Round
+1983-1984,Kansas City Kings,West,0.463,8,15,0.45,15,14,No Playoff,No Playoff,First Round
