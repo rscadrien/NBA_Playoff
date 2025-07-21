@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 from unittest import mock
-from Training.evaluation import evaluation
+from Training.evaluation import evaluate_model
 
 @pytest.fixture
 def sample_data():
@@ -26,13 +26,13 @@ def sample_data():
     class_names = ['Champion', 'Finalist', 'Conf_Finalist', 'Conf_SemiFinalist']
     return y_test, y_pred, y_prob, class_names
 
-@mock.patch("Evaluation.evaluation.ConfusionMatrixDisplay.from_predictions")
-@mock.patch("Evaluation.evaluation.plt.show")
+@mock.patch("Training.evaluation.ConfusionMatrixDisplay.from_predictions")
+@mock.patch("Training.evaluation.plt.show")
 def test_evaluate_model_runs(mock_show, mock_conf_matrix, sample_data):
     y_test, y_pred, y_prob, class_names = sample_data
 
     # Run evaluation
-    evaluation(y_test, y_pred, y_prob, class_names)
+    evaluate_model(y_test, y_pred, y_prob, class_names)
 
     # Check confusion matrix is displayed for each class
     assert mock_conf_matrix.call_count == len(class_names)
