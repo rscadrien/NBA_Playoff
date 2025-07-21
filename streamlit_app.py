@@ -47,8 +47,12 @@ if st.button("Predict Playoff Outcome"):
     st.write(f"Model type: {type(model)}")
 
     # Print each classifier in the chain
-    for i, estimator in enumerate(model.estimators_):
-        st.write(f"Classifier #{i}: {type(estimator)}")
+    for i, clf in enumerate(model.estimators_):
+        st.write(f"Classifier #{i}: {type(clf)}")
+        if hasattr(clf, "classes_"):
+            st.write(f"Classifier #{i} is fitted. Classes: {clf.classes_}")
+        else:
+            st.error(f"Classifier #{i} is NOT fitted properly.")
     y_prob = model.predict_proba(X)
 
     # Display probabilities
