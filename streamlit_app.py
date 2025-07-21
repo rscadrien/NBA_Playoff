@@ -44,14 +44,11 @@ if st.button("Predict Playoff Outcome"):
 
     # Load model and predict
     model = joblib.load('NBA.joblib')
-    y_probs = []
-    for i, clf in enumerate(model.estimators_):
-        proba = clf.predict_proba(X)[0][1]  # Probability of positive class
-        y_probs.append(proba)
-
+    st.write(f"Model type: {type(model)}")
+    y_prob = model.predict_proba(X)
 
     # Display probabilities
-    labels = ['Conf. Semi-Finalist', 'Conf. Finalist', 'NBA Finalist', 'NBA Champion']
     st.subheader("Prediction Probabilities:")
-    for label, prob in zip(labels, y_probs):
-        st.write(f"**{label}**: {prob:.3f}")
+    labels = ['Conf. Semi-Finalist', 'Conf. Finalist', 'NBA Finalist', 'NBA Champion']
+    for i, label in enumerate(labels):
+        st.write(f"**{label}**: {y_prob[0][i]:.3f}")
