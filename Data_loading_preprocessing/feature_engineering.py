@@ -12,7 +12,7 @@ def create_targets(df: pd.DataFrame) -> pd.DataFrame:
 
 def encode_conference(df: pd.DataFrame, encoder_path: str, mode: str = 'train') -> pd.DataFrame:
     if mode == 'train':
-        encoder = OrdinalEncoder(categories=[['Est', 'West']])
+        encoder = OrdinalEncoder(categories=[['East', 'West']])
         df['Conference'] = encoder.fit_transform(df[['Conference']])
         joblib.dump(encoder, encoder_path)
     elif mode == 'eval':

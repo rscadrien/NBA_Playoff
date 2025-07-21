@@ -5,7 +5,7 @@ from Data_loading_preprocessing.preprocessing import scale_features
 from Inference.valid_input import get_valid_input_str, get_valid_input_seed, get_valid_input_record
 
 #Ask for Input
-Conference = get_valid_input_str("What is the conference of the team? (Est/West): ", ['Est', 'West'])
+Conference = get_valid_input_str("What is the conference of the team? (Est/West): ", ['East', 'West'])
 Season_record = get_valid_input_record("What is the season record of the team?")
 Conf_seed = get_valid_input_seed('What is the seed of the team in its conference?',15)
 NBA_seed = get_valid_input_seed('What is the seed of the team in all the NBA?',30)
