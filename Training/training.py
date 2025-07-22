@@ -20,13 +20,11 @@ df = scale_features(df, scaling_cols, 'scaler_seed_rank.joblib', mode = 'train')
 # --- Split data ---
 X = df.drop(['Champion', 'Finalist', 'Conf_Finalist', 'Conf_SemiFinalist'], axis=1)
 y = df[['Champion', 'Finalist', 'Conf_Finalist', 'Conf_SemiFinalist']][['Conf_SemiFinalist', 'Conf_Finalist', 'Finalist', 'Champion']]
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+#X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 # --- Train and save model ---
-model = train_model(X_train, y_train)
+model = train_model(X, y)
 save_model(model, 'NBA.joblib')
 
-# --- Evaluate model ---
-y_pred = model.predict(X_test)
-y_prob = model.predict_proba(X_test)
-evaluate_model(y_test.values, y_pred, y_prob, ['Semifinalist', 'Conf Finalist', 'Finalist', 'Champion'])
+# --- Evaluate model by cross-validation
+evaluate_model(model, X, y, ['Semifinalist', 'Conf Finalist', 'Finalist', 'Champion'])
