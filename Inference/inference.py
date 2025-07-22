@@ -42,4 +42,8 @@ y_prob=model.predict_proba(X)
 #Printing the result
 labels = ['Conf. Semi-Finalist', 'Conf. Finalist', 'NBA Finalist', 'NBA Champion']
 for i, label in enumerate(labels):
-    print(f"The probability of the team to be a {label} is: {y_prob[0][i]:.3f}")
+    T = 3
+    prob = y_prob[0][i]
+    # Apply the transformation
+    prob_scaled=(prob**(1/T))/((prob**(1/T))+((1-prob)**(1/T)))
+    print(f"The probability of the team to be a {label} is: {prob_scaled:.3f}")
