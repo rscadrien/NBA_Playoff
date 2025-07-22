@@ -55,4 +55,4 @@ if st.button("Predict Playoff Outcome"):
         prob = y_prob[0][i]
         # Apply the transformation
         prob_scaled=(prob**(1/T))/((prob**(1/T))+((1-prob)**(1/T)))
-        st.write(f"**{label}**: {y_prob[0][i]:.3f}")
+        st.write(f"**{label}**: {prob_scaled:.3f}")
