@@ -52,5 +52,7 @@ if st.button("Predict Playoff Outcome"):
     labels = ['Conf. Semi-Finalist', 'Conf. Finalist', 'NBA Finalist', 'NBA Champion']
     for i, label in enumerate(labels):
         T = 2
-        y_prob[0][i]=(y_prob[0][i])^(1/T)/((y_prob[0][i])^(1/T)+(1-y_prob[0][i])^(1/T))
+        prob = y_prob[0][i]
+        # Apply the transformation
+        prob_scaled=(prob**(1/T))/((prob**(1/T))+((1-prob)**(1/T)))
         st.write(f"**{label}**: {y_prob[0][i]:.3f}")
