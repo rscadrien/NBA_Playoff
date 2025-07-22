@@ -48,7 +48,9 @@ if st.button("Predict Playoff Outcome"):
     y_prob = model.predict_proba(X)
 
     # Display probabilities
-    st.subheader("Prediction Odds:")
+    st.subheader("Prediction Probabilities:")
     labels = ['Conf. Semi-Finalist', 'Conf. Finalist', 'NBA Finalist', 'NBA Champion']
     for i, label in enumerate(labels):
-        st.write(f"**{label}**: {1/y_prob[0][i]:.3f}")
+        T = 2
+        y_prob[0][i]=(y_prob[0][i])^(1/T)/((y_prob[0][i])^(1/T)+(1-y_prob[0][i])^(1/T))
+        st.write(f"**{label}**: {y_prob[0][i]:.3f}")
