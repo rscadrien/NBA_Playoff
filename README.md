@@ -10,6 +10,7 @@ The model outputs the probabilities for a team to reach the following stages:
 
 This project uses a **Chain Classifier** composed of **XGBoost** models to predict these outcomes.
 
+---
 ## 🧠 Model Inputs
 
 The model takes the following inputs for each team:
@@ -34,21 +35,23 @@ For the easiest experience, use the interactive web application:
 #### Run inference
 python -m Inference.inference
 
+---
+
 ## ⚙️ Training the Model
 Training code is located in the Training/ folder. To retrain the model:
 python -m Training.training
-
+---
 ## 🧪 Running Tests
 To run unit tests:
 pytest tests/
-
+---
 ## 🤝 Contributing
 Contributions are welcome!
 Feel free to open issues, suggest improvements, or submit pull requests.
-
+---
 ## 📄 License
 This project is licensed under the MIT License.
-
+---
 ## 📬 Contact
 Questions or suggestions?
 Reach out at: adridevolder@hotmail.com
