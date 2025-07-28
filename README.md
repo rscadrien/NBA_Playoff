@@ -43,6 +43,24 @@ python -m Training.training
 
 ---
 
+## 📊 Dataset
+
+The dataset includes **all NBA teams that qualified for the playoffs** from the **1983–1984 season to the 2023–2024 season**, including teams that entered through the **play-in tournament**.
+
+For each team, the dataset provides:
+- **Model input features**:  
+  - Conference  
+  - Season record  
+  - Conference seed  
+  - Overall NBA seed  
+  - Offensive rating rank  
+  - Defensive rating rank  
+  - Playoff result two seasons ago  
+  - Playoff result from the previous season  
+- **Label**: The actual playoff result of the team (Conference Semi-Finalist, Finalist, NBA Finalist, NBA Champion)
+
+---
+
 ## 🧪 Running Tests
 To run unit tests:
 pytest tests/
