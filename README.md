@@ -31,7 +31,7 @@ For the easiest experience, use the interactive web application:
 👉 [NBA Playoff Predictor on Streamlit](https://nbaplayoff-prediction.streamlit.app/)
 
 ### 🐍 Use via Python
-# Run inference
+#### Run inference
 python -m Inference.inference
 
 ## ⚙️ Training the Model
