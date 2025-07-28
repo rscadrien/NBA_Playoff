@@ -40,18 +40,26 @@ python -m Inference.inference
 ## ⚙️ Training the Model
 Training code is located in the Training/ folder. To retrain the model:
 python -m Training.training
+
 ---
+
 ## 🧪 Running Tests
 To run unit tests:
 pytest tests/
+
 ---
+
 ## 🤝 Contributing
 Contributions are welcome!
 Feel free to open issues, suggest improvements, or submit pull requests.
+
 ---
+
 ## 📄 License
 This project is licensed under the MIT License.
+
 ---
+
 ## 📬 Contact
 Questions or suggestions?
 Reach out at: adridevolder@hotmail.com
