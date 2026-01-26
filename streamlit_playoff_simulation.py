@@ -27,7 +27,7 @@ X = scale_features(X, scaling_cols, 'scaler_seed_rank.joblib', mode='eval')
 model = joblib.load('NBA.joblib')
 y_prob = model.predict_proba(X)
 
-T=3
+T=1
 prob_scaled = (y_prob**(1/T))/((y_prob**(1/T))+((1-y_prob)**(1/T)))
 
 df = pd.DataFrame(prob_scaled, columns=labels, index=teams)
