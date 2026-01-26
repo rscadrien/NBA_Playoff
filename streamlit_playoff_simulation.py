@@ -18,6 +18,7 @@ X_ini, model = load_data_and_model()
 teams = X_ini['Team'].tolist()
 
 # ---------- Button 1: Predict Global Playoff Outcomes ----------
+st.subheader("Predict Global Playoff outcomes for all NBA teams:")
 if st.button("Predict Global Playoff Outcomes"):
     X = X_ini.copy()
     # Encode and scale
@@ -45,6 +46,8 @@ if st.button("Predict Global Playoff Outcomes"):
     st.dataframe(df, use_container_width=True)
 
 # ---------- Button 2: Run Playoff Simulations ----------
+st.subheader("Run Playoff simulations:")
+T = st.number_input("Upset factor (higher = more upsets)", min_value=1.0, max_value=10.0, step=0.5, value=3.0)
 if st.button("Run Playoff Simulations"):
     if 'y_prob' not in st.session_state:
         st.error("Please first calculate the playoff probabilities!")
