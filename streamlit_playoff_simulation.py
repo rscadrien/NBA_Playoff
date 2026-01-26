@@ -35,7 +35,7 @@ if st.button("Predict Global Playoff Outcomes"):
 st.title("🏀 NBA Playoff Simulation")
 # User Inputs
 T = st.number_input("What is the upset factor?", min_value=1.0, max_value=10.0, step=0.5)
-N = st.number_input("How many simulations to run?", min_value=10, max_value=1000, step=10)
+# N = st.number_input("How many simulations to run?", min_value=10, max_value=1000, step=10)
 
 if st.button("Run Playoff Simulations"):
     Brackets =[[1,8],[2,7],[3,6],[4,5]]
