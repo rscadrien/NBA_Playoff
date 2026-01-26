@@ -43,7 +43,6 @@ if st.button("Predict Global Playoff Outcomes"):
     labels = ['Conf. Semi-Finalist', 'Conf. Finalist', 'NBA Finalist', 'NBA Champion']
     df = pd.DataFrame(prob_scaled, columns=labels, index=teams)
     df.index.name = "Team"
-    st.dataframe(df, use_container_width=True)
     #Store dataframe in session state
     st.session_state['df_playoff_prob'] = df
 
@@ -148,11 +147,6 @@ if st.button("Run Playoff Simulations"):
         st.session_state['all_simulations'] = all_simulations
         st.session_state['Number_championships'] = Number_championships
 
-        # Display championship summary
-        st.subheader("🏆 NBA Championship Results after Simulations:")
-        Number_championships_sorted = dict(sorted(Number_championships.items(), key=lambda item: item[1], reverse=True))
-        for team, wins in Number_championships_sorted.items():
-            st.write(f"**{team}**: {wins} championships ({(wins/N)*100:.2f}%)")
 
 # Display championship summary if it exists
 if 'Number_championships' in st.session_state and st.session_state['Number_championships']:
