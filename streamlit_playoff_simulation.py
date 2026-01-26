@@ -36,7 +36,7 @@ if st.button("Predict Global Playoff Outcomes"):
     st.session_state['X_ini'] = X_ini
 
     # Temperature scaling
-    T = 3
+    T = 2
     prob_scaled = (y_prob**(1/T))/((y_prob**(1/T)) + ((1-y_prob)**(1/T)))
     
     # Display results
