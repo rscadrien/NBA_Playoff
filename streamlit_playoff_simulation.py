@@ -77,7 +77,8 @@ if st.button("Run Playoff Simulations"):
                 total = p_i_scaled + p_j_scaled
                 probs = [p_i_scaled/total, p_j_scaled/total]
                 winner = np.random.choice([numbers[i], numbers[j]], p=probs)
-                st.write(f"{X_ini['Team'][numbers[i]]} vs {X_ini['Team'][numbers[j]]} -> Winner: {X_ini['Team'][winner]}")
+                st.write(f"{X_ini['Team'][numbers[i]]} vs {X_ini['Team'][numbers[j]]}")
+                st.write(f"Winner: {X_ini['Team'][winner]}")
                 winners_round1.append(winner)
             
             # Semi-finals
@@ -91,7 +92,8 @@ if st.button("Run Playoff Simulations"):
                 total = p_i_scaled + p_j_scaled
                 probs = [p_i_scaled/total, p_j_scaled/total]
                 winner = np.random.choice([winners_round1[i], winners_round1[j]], p=probs)
-                st.write(f"Semi-Final: {X_ini['Team'][winners_round1[i]]} vs {X_ini['Team'][winners_round1[j]]} -> Winner: {X_ini['Team'][winner]}")
+                st.write(f"Semi-Final: {X_ini['Team'][winners_round1[i]]} vs {X_ini['Team'][winners_round1[j]]}")
+                st.write(f"Winner: {X_ini['Team'][winner]}")
                 winners_round2.append(winner)
             
             # Conference Final
@@ -102,6 +104,7 @@ if st.button("Run Playoff Simulations"):
             total = p_i_scaled + p_j_scaled
             probs = [p_i_scaled/total, p_j_scaled/total]
             winner = np.random.choice([winners_round2[0], winners_round2[1]], p=probs)
+            st.write(f"Conference final: {X_ini['Team'][winners_round2[0]]} vs {X_ini['Team'][winners_round2[1]]}")
             st.write(f"Conference Final Winner: {X_ini['Team'][winner]}")
             return winner
         
@@ -117,4 +120,5 @@ if st.button("Run Playoff Simulations"):
         total = p_E_scaled + p_W_scaled
         probs = [p_E_scaled/total, p_W_scaled/total]
         winner_NBA = np.random.choice([winner_East, winner_West], p=probs)
-        st.write(f"🏆 NBA Champion: {X_ini['Team'][winner_NBA]}")
+        st.write(f"🏆 NBA Final: {X_ini['Team'][winner_East]} vs {X_ini['Team'][winner_West]}  -> Winner : {X_ini['Team'][winner_NBA]}")
+        st.write(f"🏆 **NBA Champion: {X_ini['Team'][winner_NBA]}**")
