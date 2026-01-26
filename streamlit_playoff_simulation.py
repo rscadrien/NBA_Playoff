@@ -66,6 +66,8 @@ if st.button("Run Playoff Simulations"):
         # Define brackets
         East_numbers = list(range(10))
         West_numbers = list(range(10, 20))
+        st.session_state['East_numbers'] = East_numbers
+        st.session_state['West_numbers'] = West_numbers
 
         # Helper function: simulate a single conference and return all round winners
         def simulate_conference(numbers):
@@ -155,6 +157,8 @@ if 'all_simulations' in st.session_state and st.session_state['all_simulations']
     )
 
     if sim_number:
+        East_numbers = st.session_state['East_numbers']
+        West_numbers = st.session_state['West_numbers']
         sim_result = st.session_state['all_simulations'][sim_number - 1]
         st.write("### 🏟️ East Conference")
         st.write("First round")
