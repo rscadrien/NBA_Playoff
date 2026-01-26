@@ -2,7 +2,7 @@ import joblib
 import pandas as pd
 import streamlit as st
 import numpy as np
-from Data_loading_preprocessing.feature_engineering import encode_conference, encode_playoff_results
+from Data_loading_preprocessing.feature_engineering import encode_conference, encode_playoff_results, drop_columns
 from Data_loading_preprocessing.preprocessing import scale_features
 
 # Streamlit UI
@@ -20,6 +20,7 @@ teams = X['Team']
 # Encode and scale input
 X = encode_conference(X, 'encoder_conference.joblib', mode='eval')
 X = encode_playoff_results(X)
+X = drop_columns(X)
 scaling_cols = ['Conf. Seed', 'NBA Seed', 'ORtg Rank', 'DRtg Rank']
 X = scale_features(X, scaling_cols, 'scaler_seed_rank.joblib', mode='eval')
 # Load model and predict
@@ -36,5 +37,3 @@ df.index.name = "Team"
 df_sorted = df.sort_values(by=sort_col, ascending=ascending)
 # Display
 st.dataframe(df_sorted, use_container_width=True)
-
-
