@@ -47,7 +47,7 @@ if st.button("Predict Global Playoff Outcomes"):
 
 # ---------- Button 2: Run Playoff Simulations ----------
 st.subheader("Run Playoff simulations:")
-T = st.number_input("Upset factor (higher = more upsets)", min_value=1.0, max_value=10.0, step=0.5, value=1.0)
+T = st.number_input("Upset factor (higher = more upsets)", min_value=1.0, max_value=4.0, step=0.5, value=1.0)
 N = st.number_input("Number of simulations to run", min_value=10, max_value=1000, step=1, value=10)
 if st.button("Run Playoff Simulations"):
     if 'y_prob' not in st.session_state:
@@ -114,26 +114,47 @@ if st.button("Run Playoff Simulations"):
         
         # Simulate both conferences
         Number_championships = {team:0 for team in teams}
+        all_simulations = []  # Will store the results of each simulation
+
         for sim in range(N):
-            winner_East = simulate_conference("East", East_numbers)
-            winner_West = simulate_conference("West", West_numbers)
-        
+            sim_result = {}  # Store all rounds in this simulation
+    
+            # East Conference
+            winners_East_rounds = simulate_conference("East", East_numbers)  # we will modify simulate_conference to return all rounds
+            sim_result['East'] = winners_East_rounds
+    
+            # West Conference
+            winners_West_rounds = simulate_conference("West", West_numbers)
+            sim_result['West'] = winners_West_rounds
+    
             # NBA Final
-            p_E = y_prob[winner_East][3]
-            p_W = y_prob[winner_West][3]
-            p_E_scaled = (p_E**(1/T))/((p_E**(1/T))+((1-p_E)**(1/T)))
-            p_W_scaled = (p_W**(1/T))/((p_W**(1/T))+((1-p_W)**(1/T)))
-            total = p_E_scaled + p_W_scaled
-            probs = [p_E_scaled/total, p_W_scaled/total]
+            winner_East = winners_East_rounds['Conference Final']
+            winner_West = winners_West_rounds['Conference Final']
+            # Compute winner probabilities
+            p_i = y_prob[winner_East][3]
+            p_j = y_prob[winner_West][3]
+            p_i_scaled = (p_i**(1/T))/((p_i**(1/T))+((1-p_i)**(1/T)))
+            p_j_scaled = (p_j**(1/T))/((p_j**(1/T))+((1-p_j)**(1/T)))
+            total = p_i_scaled + p_j_scaled
+            probs = [p_i_scaled/total, p_j_scaled/total]
             winner_NBA = np.random.choice([winner_East, winner_West], p=probs)
-            Number_championships[X_ini['Team'][winner_NBA]] += 1
+            sim_result['NBA Final'] = (winner_East, winner_West, winner_NBA)
+    
+            all_simulations.append(sim_result)
         
         st.subheader("🏆 NBA Championship Results after Simulations:")
         # Sort teams by number of championships won
         Number_championships = dict(sorted(Number_championships.items(), key=lambda item: item[1], reverse=True))
         for team, wins in Number_championships.items():
             st.write(f"**{team}**: {wins} championships ({(wins/N)*100:.2f}%)")
+        
+        sim_number = st.number_input("Choose simulation number to see the bracket", min_value=1, max_value=N, step=1)
 
-#            st.write(f"🏆 NBA Final: {X_ini['Team'][winner_East]} vs {X_ini['Team'][winner_West]}  -> Winner : {X_ini['Team'][winner_NBA]}")
-#            st.write(f"Probabilities: {X_ini['Team'][winner_East]}: {probs[0]:.3f}, {X_ini['Team'][winner_West]}: {probs[1]:.3f}")
-#            st.write(f"🏆 **NBA Champion: {X_ini['Team'][winner_NBA]}**")
+        if sim_number and all_simulations:
+            sim_result = all_simulations[sim_number - 1]
+            st.write("### 🏟️ East Conference")
+            st.write(sim_result['East'])
+            st.write("### 🏟️ West Conference")
+            st.write(sim_result['West'])
+            st.write("### 🏆 NBA Final")
+            st.write(f"{X_ini['Team'][sim_result['NBA Final'][0]]} vs {X_ini['Team'][sim_result['NBA Final'][1]]} -> Winner: {X_ini['Team'][sim_result['NBA Final'][2]]}")
