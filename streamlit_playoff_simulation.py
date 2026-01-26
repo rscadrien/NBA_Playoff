@@ -148,6 +148,7 @@ if st.button("Run Playoff Simulations"):
             st.write(f"**{team}**: {wins} championships ({(wins/N)*100:.2f}%)")
 
 # ---------- Select a simulation to view the bracket ----------
+st.subheader("Example of brackets:")
 if 'all_simulations' in st.session_state and st.session_state['all_simulations']:
     sim_number = st.number_input(
         "Choose simulation number to see the bracket",
