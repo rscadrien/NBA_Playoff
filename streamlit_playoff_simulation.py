@@ -56,13 +56,14 @@ st.subheader("Run Playoff simulations:")
 T = st.number_input("Upset factor (higher = more upsets)", min_value=1.0, max_value=4.0, step=0.5, value=2.0)
 N = st.number_input("Number of simulations to run", min_value=10, max_value=1000, step=1, value=10)
 
-# Initialize session state for simulations if not already
-if 'all_simulations' not in st.session_state:
-    st.session_state['all_simulations'] = []
-if 'Number_championships' not in st.session_state:
-    st.session_state['Number_championships'] = {team: 0 for team in teams}
 
 if st.button("Run Playoff Simulations"):
+    # Initialize session state for simulations if not already
+    if 'all_simulations' not in st.session_state:
+        st.session_state['all_simulations'] = []
+    if 'Number_championships' not in st.session_state:
+        st.session_state['Number_championships'] = {team: 0 for team in teams}
+
     if 'y_prob' not in st.session_state:
         st.error("Please first calculate the playoff probabilities!")
     else:
