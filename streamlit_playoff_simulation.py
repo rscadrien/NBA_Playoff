@@ -129,6 +129,8 @@ if st.button("Run Playoff Simulations"):
             Number_championships[X_ini['Team'][winner_NBA]] += 1
         
         st.subheader("🏆 NBA Championship Results after Simulations:")
+        # Sort teams by number of championships won
+        Number_championships = dict(sorted(Number_championships.items(), key=lambda item: item[1], reverse=True))
         for team, wins in Number_championships.items():
             st.write(f"**{team}**: {wins} championships ({(wins/N)*100:.2f}%)")
 
