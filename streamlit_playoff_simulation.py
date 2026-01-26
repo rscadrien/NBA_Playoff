@@ -63,7 +63,7 @@ if st.button("Run Playoff Simulations"):
         conferences = {'East': East_numbers, 'West': West_numbers}
         
         def simulate_conference(conf_name, numbers):
-            st.write(f"🏟️ {conf_name} Conference")
+            # st.write(f"🏟️ {conf_name} Conference")
             
             # First round
             winners_round1 = []
