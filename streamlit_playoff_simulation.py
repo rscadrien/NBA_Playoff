@@ -55,7 +55,6 @@ if st.button("Run Playoff Simulations"):
         y_prob = st.session_state['y_prob']
         X_ini = st.session_state['X_ini']
 
-        T = st.number_input("Upset factor (higher = more upsets)", min_value=1.0, max_value=10.0, step=0.5, value=3.0)
 
         # Define brackets
         East_numbers = list(range(10))
