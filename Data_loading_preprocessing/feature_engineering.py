@@ -4,25 +4,26 @@ from sklearn.preprocessing import OrdinalEncoder
 import joblib
 
 def create_targets(df: pd.DataFrame) -> pd.DataFrame:
-    df['Champion'] = np.where(df['Playoff Outcome'] == 'NBA Champion', 1, 0)
-    df['Finalist'] = np.where(df['Playoff Outcome'].isin(['NBA Champion', 'NBA Final']), 1, 0)
-    df['Conf_Finalist'] = np.where(df['Playoff Outcome'].isin(['NBA Champion', 'NBA Final', 'Conference Final']), 1, 0)
-    df['Conf_SemiFinalist'] = np.where(df['Playoff Outcome'].isin(['NBA Champion', 'NBA Final', 'Conference Final', 'Conference Semi-Final']), 1, 0)
+    result_mapping = {
+        'No Playoff': 0,
+        'First Round': 1/16,
+        'Conference Semi-Final': 1/8,
+        'Conference Final': 1/4,
+        'NBA Final': 1/2,
+        'NBA Champion': 1
+    }
+    df['Playoff Outcome (numeric)'] = df['Playoff Outcome'].map(result_mapping)
     return df.drop(columns=['Playoff Outcome'])
 
 def encode_conference(df: pd.DataFrame, encoder_path: str, mode: str = 'train') -> pd.DataFrame:
-    if mode == 'train':
-        encoder = OrdinalEncoder(categories=[['East', 'West']])
-        df['Conference'] = encoder.fit_transform(df[['Conference']])
-        joblib.dump(encoder, encoder_path)
-    elif mode == 'eval':
-        encoder = joblib.load(encoder_path)
-        df['Conference'] = encoder.transform(df[['Conference']])
-    else:
-        raise ValueError("Mode must be either 'train' or 'eval'")
+    Conference_mapping ={
+    'East': 0,
+    'West': 1,
+    }
+    df['Conference'] = df['Conference'].map(Conference_mapping)    
     return df
 
-def encode_playoff_results(df: pd.DataFrame) -> pd.DataFrame:
+def encode_playoff_results(df):
     result_mapping = {
         'No Playoff': 0,
         'First Round': 1/16,

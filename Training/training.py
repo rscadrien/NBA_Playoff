@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from Data_loading_preprocessing.data_loader import load_data
 from Data_loading_preprocessing.feature_engineering import create_targets, encode_conference, encode_playoff_results, drop_columns
 from Data_loading_preprocessing.preprocessing import scale_features
-from Model.model import train_model, save_model
+from Model.model_regression import train_model_regression, save_model
 from Training.evaluation import evaluate_model
 
 # --- Load and preprocess data ---
@@ -18,13 +18,13 @@ scaling_cols = ['Conf. Seed', 'NBA Seed', 'ORtg Rank', 'DRtg Rank']
 df = scale_features(df, scaling_cols, 'scaler_seed_rank.joblib', mode = 'train')
 
 # --- Split data ---
-X = df.drop(['Champion', 'Finalist', 'Conf_Finalist', 'Conf_SemiFinalist'], axis=1)
-y = df[['Champion', 'Finalist', 'Conf_Finalist', 'Conf_SemiFinalist']][['Conf_SemiFinalist', 'Conf_Finalist', 'Finalist', 'Champion']]
+X = df.drop(['Playoff Outcome (numeric)'], axis=1)
+y = y = df[['Playoff Outcome (numeric)']].values.ravel()
 #X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 # --- Train and save model ---
-model = train_model(X, y)
+model = train_model_regression(X, y)
 save_model(model, 'NBA.joblib')
 
 # --- Evaluate model by cross-validation
-evaluate_model(model, X, y, ['Semifinalist', 'Conf Finalist', 'Finalist', 'Champion'])
+evaluate_model(model, X, y)

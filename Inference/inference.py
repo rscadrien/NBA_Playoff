@@ -1,5 +1,6 @@
 import joblib
 import pandas as pd
+import numpy as np
 from Data_loading_preprocessing.feature_engineering import encode_conference, encode_playoff_results
 from Data_loading_preprocessing.preprocessing import scale_features
 from Inference.valid_input import get_valid_input_str, get_valid_input_seed, get_valid_input_record
@@ -35,15 +36,10 @@ X = encode_playoff_results(X)
 scaling_cols = ['Conf. Seed', 'NBA Seed', 'ORtg Rank', 'DRtg Rank']
 X = scale_features(X, scaling_cols, 'scaler_seed_rank.joblib', mode = 'eval')
 
-#Load the pretrained model, the decoder and the scaler
+#Load the pretrained model
 model = joblib.load('NBA.joblib')
 #Apply the model
-y_prob=model.predict_proba(X)
+y=model.predict(X)
+y_clipped = np.clip(y, 0, 1)
 #Printing the result
-labels = ['Conf. Semi-Finalist', 'Conf. Finalist', 'NBA Finalist', 'NBA Champion']
-for i, label in enumerate(labels):
-    T = 3
-    prob = y_prob[0][i]
-    # Apply the transformation
-    prob_scaled=(prob**(1/T))/((prob**(1/T))+((1-prob)**(1/T)))
-    print(f"The probability of the team to be a {label} is: {prob_scaled:.3f}")
+print(f'The playoff strength is: {y_clipped:.2f}')
