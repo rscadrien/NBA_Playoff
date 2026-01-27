@@ -233,28 +233,41 @@ if 'all_simulations' in st.session_state and st.session_state['all_simulations']
 
         with col2:
             st.markdown("### West Semi-Finals")
+            st.markdown("")  # empty space to align
             st.markdown(f"{X_ini['Team'][sim_result['West']['First Round'][0]]} vs {X_ini['Team'][sim_result['West']['First Round'][3]]}\n**Winner:** {X_ini['Team'][sim_result['West']['Semi-Finals'][0]]}")
+            st.markdown("")  # empty space to align
             st.markdown(f"{X_ini['Team'][sim_result['West']['First Round'][1]]} vs {X_ini['Team'][sim_result['West']['First Round'][2]]}\n**Winner:** {X_ini['Team'][sim_result['West']['Semi-Finals'][1]]}")
 
         with col3:
            st.markdown("### West Final")
+           st.markdown("")  # empty space to align
+           st.markdown("")  # empty space to align
            st.markdown(f"{X_ini['Team'][sim_result['West']['Semi-Finals'][0]]} vs {X_ini['Team'][sim_result['West']['Semi-Finals'][1]]}\n**Winner:** {X_ini['Team'][sim_result['West']['Conference Final']]}")
+           st.markdown("")  # empty space to align
 
         # --- NBA Final ---
         with col4:
             st.markdown("### NBA Final")
             winner_West = sim_result['West']['Conference Final']
             winner_East = sim_result['East']['Conference Final']
+            st.markdown("")  # empty space to align
+            st.markdown("")  # empty space to align
             st.markdown(f"{X_ini['Team'][winner_West]} vs {X_ini['Team'][winner_East]}\n**Winner:** 🏆 {X_ini['Team'][sim_result['NBA Final'][2]]}")
+            st.markdown("")  # empty space to align
 
         # --- EAST CONFERENCE ---
         with col5:
             st.markdown("### East Final")
+            st.markdown("")  # empty space to align
+            st.markdown("")  # empty space to align
             st.markdown(f"{X_ini['Team'][sim_result['East']['Semi-Finals'][0]]} vs {X_ini['Team'][sim_result['East']['Semi-Finals'][1]]}\n**Winner:** {X_ini['Team'][sim_result['East']['Conference Final']]}")
+            st.markdown("")  # empty space to align
 
         with col6:
             st.markdown("### East Semi-Finals")
+            st.markdown("")  # empty space to align
             st.markdown(f"{X_ini['Team'][sim_result['East']['First Round'][0]]} vs {X_ini['Team'][sim_result['East']['First Round'][3]]}\n**Winner:** {X_ini['Team'][sim_result['East']['Semi-Finals'][0]]}")
+            st.markdown("")  # empty space to align
             st.markdown(f"{X_ini['Team'][sim_result['East']['First Round'][1]]} vs {X_ini['Team'][sim_result['East']['First Round'][2]]}\n**Winner:** {X_ini['Team'][sim_result['East']['Semi-Finals'][1]]}")
 
         with col7:
