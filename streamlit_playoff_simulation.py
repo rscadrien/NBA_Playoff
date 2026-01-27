@@ -24,7 +24,6 @@ st.subheader("Run Playoff simulations:")
 T = st.number_input("Upset factor (higher = more upsets)", min_value=1.0, max_value=4.0, step=0.5, value=2.0)
 N = st.number_input("Number of simulations to run", min_value=10, max_value=1000, step=1, value=100)
 
-
 if st.button("Run Playoff Simulations"):
     X = X_ini.copy()
     # Encode and scale
