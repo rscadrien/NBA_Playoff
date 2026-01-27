@@ -155,8 +155,8 @@ if st.button("Run Playoff Simulations"):
             # NBA Final
             winner_East = winners_East['Conference Final']
             winner_West = winners_West['Conference Final']
-            p_E = y[winner_East][3]
-            p_W = y[winner_West][3]
+            p_E = y[winner_East]
+            p_W = y[winner_West]
             EPS = 1e-6
             p_E = np.clip(p_E, EPS, 1 - EPS)
             p_W = np.clip(p_W, EPS, 1 - EPS)
