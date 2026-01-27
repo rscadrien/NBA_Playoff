@@ -220,6 +220,50 @@ if 'all_simulations' in st.session_state and st.session_state['all_simulations']
         East_numbers = st.session_state['East_numbers']
         West_numbers = st.session_state['West_numbers']
         sim_result = st.session_state['all_simulations'][sim_number - 1]
+        # 7 columns for the bracket
+        col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
+
+        # --- WEST CONFERENCE ---
+        with col1:
+            st.markdown("### West 1st Round")
+            st.markdown(f"{X_ini['Team'][West_numbers[0]]} vs {X_ini['Team'][West_numbers[7]]}\n**Winner:** {X_ini['Team'][sim_result['West']['First Round'][0]]}")
+            st.markdown(f"{X_ini['Team'][West_numbers[1]]} vs {X_ini['Team'][West_numbers[6]]}\n**Winner:** {X_ini['Team'][sim_result['West']['First Round'][1]]}")
+            st.markdown(f"{X_ini['Team'][West_numbers[2]]} vs {X_ini['Team'][West_numbers[5]]}\n**Winner:** {X_ini['Team'][sim_result['West']['First Round'][2]]}")
+            st.markdown(f"{X_ini['Team'][West_numbers[3]]} vs {X_ini['Team'][West_numbers[4]]}\n**Winner:** {X_ini['Team'][sim_result['West']['First Round'][3]]}")
+
+        with col2:
+            st.markdown("### West Semi-Finals")
+            st.markdown(f"{X_ini['Team'][sim_result['West']['First Round'][0]]} vs {X_ini['Team'][sim_result['West']['First Round'][3]]}\n**Winner:** {X_ini['Team'][sim_result['West']['Semi-Finals'][0]]}")
+            st.markdown(f"{X_ini['Team'][sim_result['West']['First Round'][1]]} vs {X_ini['Team'][sim_result['West']['First Round'][2]]}\n**Winner:** {X_ini['Team'][sim_result['West']['Semi-Finals'][1]]}")
+
+        with col3:
+           st.markdown("### West Final")
+           st.markdown(f"{X_ini['Team'][sim_result['West']['Semi-Finals'][0]]} vs {X_ini['Team'][sim_result['West']['Semi-Finals'][1]]}\n**Winner:** {X_ini['Team'][sim_result['West']['Conference Final']]}")
+
+        # --- NBA Final ---
+        with col4:
+            st.markdown("### NBA Final")
+            winner_West = sim_result['West']['Conference Final']
+            winner_East = sim_result['East']['Conference Final']
+            st.markdown(f"{X_ini['Team'][winner_West]} vs {X_ini['Team'][winner_East]}\n**Winner:** 🏆 {X_ini['Team'][sim_result['NBA Final'][2]]}")
+
+        # --- EAST CONFERENCE ---
+        with col5:
+            st.markdown("### East Final")
+            st.markdown(f"{X_ini['Team'][sim_result['East']['Semi-Finals'][0]]} vs {X_ini['Team'][sim_result['East']['Semi-Finals'][1]]}\n**Winner:** {X_ini['Team'][sim_result['East']['Conference Final']]}")
+
+        with col6:
+            st.markdown("### East Semi-Finals")
+            st.markdown(f"{X_ini['Team'][sim_result['East']['First Round'][0]]} vs {X_ini['Team'][sim_result['East']['First Round'][3]]}\n**Winner:** {X_ini['Team'][sim_result['East']['Semi-Finals'][0]]}")
+            st.markdown(f"{X_ini['Team'][sim_result['East']['First Round'][1]]} vs {X_ini['Team'][sim_result['East']['First Round'][2]]}\n**Winner:** {X_ini['Team'][sim_result['East']['Semi-Finals'][1]]}")
+
+        with col7:
+            st.markdown("### East 1st Round")
+            st.markdown(f"{X_ini['Team'][East_numbers[0]]} vs {X_ini['Team'][East_numbers[7]]}\n**Winner:** {X_ini['Team'][sim_result['East']['First Round'][0]]}")
+            st.markdown(f"{X_ini['Team'][East_numbers[1]]} vs {X_ini['Team'][East_numbers[6]]}\n**Winner:** {X_ini['Team'][sim_result['East']['First Round'][1]]}")
+            st.markdown(f"{X_ini['Team'][East_numbers[2]]} vs {X_ini['Team'][East_numbers[5]]}\n**Winner:** {X_ini['Team'][sim_result['East']['First Round'][2]]}")
+            st.markdown(f"{X_ini['Team'][East_numbers[3]]} vs {X_ini['Team'][East_numbers[4]]}\n**Winner:** {X_ini['Team'][sim_result['East']['First Round'][3]]}")
+        
         st.write("## 🏟️ East Conference")
         st.write("### First round")
         st.write(f"Matchup 1: {X_ini['Team'][East_numbers[0]]} vs {X_ini['Team'][East_numbers[7]]}")
