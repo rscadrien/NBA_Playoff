@@ -22,7 +22,7 @@ def draw_nba_bracket(X_ini, sim_result, East_numbers, West_numbers):
         team2 = X_ini['Team'][West_numbers[7-i]]
         winner = X_ini['Team'][sim_result['West']['First Round'][i]]
         ax.text(west_x, y, f"{team1}\nvs\n{team2}", ha='left', va='center', fontsize=10, bbox=dict(facecolor='lightblue', alpha=0.3))
-        ax.text(west_x + box_width, y, f"{winner}", ha='left', va='center', fontsize=10, fontweight='bold', color='green')
+        ax.text(west_x + 1.5 * box_width, y, f"{winner}", ha='left', va='center', fontsize=10, fontweight='bold', color='green')
 
     # Semi-Finals
     semi_y = [(west_y[0]+west_y[3])/2, (west_y[1]+west_y[2])/2]

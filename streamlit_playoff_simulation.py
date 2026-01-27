@@ -222,8 +222,8 @@ if 'all_simulations' in st.session_state and st.session_state['all_simulations']
         West_numbers = st.session_state['West_numbers']
         X_ini = st.session_state['X_ini']
         sim_result = st.session_state['all_simulations'][sim_number - 1]
-        fig = draw_nba_bracket(X_ini, sim_result, East_numbers, West_numbers)
-        st.pyplot(fig)
+        #fig = draw_nba_bracket(X_ini, sim_result, East_numbers, West_numbers)
+        #st.pyplot(fig)
         st.write("## 🏟️ East Conference")
         st.write("### First round")
         st.write(f"Matchup 1: {X_ini['Team'][East_numbers[0]]} vs {X_ini['Team'][East_numbers[7]]}")
