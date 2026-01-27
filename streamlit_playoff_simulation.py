@@ -71,21 +71,21 @@ if 'df_playoff_strength' in st.session_state:
     st.dataframe(df_sorted, use_container_width=True)
     st.markdown("""
                 ### 🏀 What is Playoff Strength?
-                # **Playoff Strength** measures how far a team is expected to go in the NBA playoffs based on current season stats.  
-                # It’s not just about winning the championship—it reflects the likelihood of advancing through each playoff round.  
-                # **Scale:**  
-                # - **0** → ❌ No Playoff  
-                # - **1/16 (~0.06)** → 🔹 First Round exit  
-                # - **1/8 (~0.125)** → 🔹 Conference Semi-Final  
-                # - **1/4 (0.25)** → 🔹 Conference Final  
-                # - **1/2 (0.5)** → 🔹 NBA Final  
-                # - **1** → 🏆 NBA Champion  
-                # 
-                # 💡 **Tip:** Higher values mean a deeper playoff run.  
-                # For example:  
-                # - **0.3** → Likely to reach **Conference Semi-Finals**  
-                # - **0.8** → Strong chance of **NBA Final** or **Champion**
-                # """)
+                 **Playoff Strength** measures how far a team is expected to go in the NBA playoffs based on current season stats.  
+                 It’s not just about winning the championship—it reflects the likelihood of advancing through each playoff round.  
+                 **Scale:**  
+                 - **0** → ❌ No Playoff  
+                 - **1/16 (~0.06)** → 🔹 First Round exit  
+                 - **1/8 (~0.125)** → 🔹 Conference Semi-Final  
+                 - **1/4 (0.25)** → 🔹 Conference Final  
+                 - **1/2 (0.5)** → 🔹 NBA Final  
+                 - **1** → 🏆 NBA Champion  
+                 
+                 💡 **Tip:** Higher values mean a deeper playoff run.  
+                 For example:  
+                 - **0.3** → Likely to reach **Conference Semi-Finals**  
+                 - **0.8** → Strong chance of **NBA Final** or **Champion**
+                 """)
 
 
 # ---------- Run Playoff Simulations ----------
