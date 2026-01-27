@@ -10,7 +10,7 @@ st.title("🏀 NBA Playoff Prediction")
 # ---------- Load data and model once ----------
 @st.cache_data
 def load_data_and_model():
-    X_ini = pd.read_csv('./Data/Current_NBA_Season.csv')
+    X_ini = pd.read_csv('./Data/Current_NBA_Season_01_25.csv')
     model = joblib.load('NBA.joblib')
     return X_ini, model
 st.write("Current NBA Teams Data:")
