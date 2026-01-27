@@ -67,6 +67,9 @@ if st.button("Run Playoff Simulations"):
             for i,j in matchups:
                 p_i = y_prob[numbers[i]][0]
                 p_j = y_prob[numbers[j]][0]
+                EPS = 1e-6
+                p_i = np.clip(p_i, EPS, 1 - EPS)
+                p_j = np.clip(p_j, EPS, 1 - EPS)
                 p_i_scaled = (p_i**(1/T))/((p_i**(1/T))+((1-p_i)**(1/T)))
                 p_j_scaled = (p_j**(1/T))/((p_j**(1/T))+((1-p_j)**(1/T)))
                 total = p_i_scaled + p_j_scaled
@@ -80,6 +83,9 @@ if st.button("Run Playoff Simulations"):
             for i,j in semi_matchups:
                 p_i = y_prob[winners_round1[i]][1]
                 p_j = y_prob[winners_round1[j]][1]
+                EPS = 1e-6
+                p_i = np.clip(p_i, EPS, 1 - EPS)
+                p_j = np.clip(p_j, EPS, 1 - EPS)
                 p_i_scaled = (p_i**(1/T))/((p_i**(1/T))+((1-p_i)**(1/T)))
                 p_j_scaled = (p_j**(1/T))/((p_j**(1/T))+((1-p_j)**(1/T)))
                 total = p_i_scaled + p_j_scaled
@@ -90,6 +96,9 @@ if st.button("Run Playoff Simulations"):
             # Conference final
             p_i = y_prob[winners_round2[0]][2]
             p_j = y_prob[winners_round2[1]][2]
+            EPS = 1e-6
+            p_i = np.clip(p_i, EPS, 1 - EPS)
+            p_j = np.clip(p_j, EPS, 1 - EPS)
             p_i_scaled = (p_i**(1/T))/((p_i**(1/T))+((1-p_i)**(1/T)))
             p_j_scaled = (p_j**(1/T))/((p_j**(1/T))+((1-p_j)**(1/T)))
             total = p_i_scaled + p_j_scaled
@@ -116,6 +125,9 @@ if st.button("Run Playoff Simulations"):
             winner_West = winners_West['Conference Final']
             p_E = y_prob[winner_East][3]
             p_W = y_prob[winner_West][3]
+            EPS = 1e-6
+            p_E = np.clip(p_E, EPS, 1 - EPS)
+            p_W = np.clip(p_W, EPS, 1 - EPS)
             p_E_scaled = (p_E**(1/T))/((p_E**(1/T))+((1-p_E)**(1/T)))
             p_W_scaled = (p_W**(1/T))/((p_W**(1/T))+((1-p_W)**(1/T)))
             total = p_E_scaled + p_W_scaled
