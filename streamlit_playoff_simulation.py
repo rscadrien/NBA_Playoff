@@ -17,8 +17,16 @@ st.write("Current NBA Teams Data:")
 X_ini, model = load_data_and_model()
 teams = X_ini['Team'].tolist()
 st.session_state['X_ini'] = X_ini
-st.dataframe(st.session_state['X_ini'].sort_values(by='Season record', ascending=False), 
-             use_container_width=True)
+st.subheader("Edit current NBA season data")
+
+edited_df = st.data_editor(
+    st.session_state["X_ini"],
+    use_container_width=True,
+    num_rows="fixed",   # or "dynamic" if you want row add/delete
+)
+st.session_state['X_ini'] = edited_df
+#st.dataframe(st.session_state['X_ini'].sort_values(by='Season record', ascending=False), 
+#             use_container_width=True)
 
 # ---------- Run Playoff Simulations ----------
 st.subheader("Run Playoff simulations:")
