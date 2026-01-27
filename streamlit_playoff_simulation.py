@@ -41,6 +41,7 @@ if st.button("Predict Global Playoff Outcomes"):
     
     # Predict probabilities
     y = model.predict(X)
+    st.write(y[0])
     
     # Store in session_state for later
     st.session_state['y'] = y
