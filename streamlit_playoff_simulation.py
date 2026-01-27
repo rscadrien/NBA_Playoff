@@ -6,7 +6,13 @@ from Data_loading_preprocessing.feature_engineering import encode_conference, en
 from Data_loading_preprocessing.preprocessing import scale_features
 
 st.title("🏀 NBA Playoff Prediction")
-
+st.markdown("""
+### How to use this app:
+1. Edit the current NBA season data if needed.
+2. Click **Predict Global Playoff Strength** to see team playoff strength.
+3. Adjust the **Upset factor** and **Number of simulations**, then click **Run Playoff Simulations**.
+4. View simulation brackets and overall championship results.
+""")
 # ---------- Load data and model once ----------
 @st.cache_data
 def load_data_and_model():
@@ -55,6 +61,7 @@ if st.button("Predict Global Playoff Strength"):
 
 # Display the previous result if it exists
 if 'df_playoff_strength' in st.session_state:
+    st.bar_chart(st.session_state['df_playoff_strength'].sort_values(by='Playoff Strength', ascending=False))
     df = st.session_state['df_playoff_strength']
 
     df_sorted = df.sort_values(
@@ -67,7 +74,8 @@ if 'df_playoff_strength' in st.session_state:
 
 # ---------- Run Playoff Simulations ----------
 st.subheader("Run Playoff simulations:")
-T = st.number_input("Upset factor (higher = more upsets)", min_value=0.0, max_value=5.0, step=0.1, value=0.5)
+T = st.number_input("Upset factor (higher = more upsets)", min_value=0.0, max_value=5.0, step=0.1, value=0.5,
+                    help="0 = no upsets, 1 = some randomness, higher values = more likely upsets")
 N = st.number_input("Number of simulations to run", min_value=10, max_value=1000, step=1, value=100)
 
 if st.button("Run Playoff Simulations"):
