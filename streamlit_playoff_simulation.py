@@ -15,7 +15,6 @@ def load_data_and_model():
     return X_ini, model
 st.write("Current NBA Teams Data:")
 X_ini, model = load_data_and_model()
-st.write(model)
 teams = X_ini['Team'].tolist()
 st.session_state['X_ini'] = X_ini
 st.subheader("Edit current NBA season data")
@@ -42,7 +41,6 @@ if st.button("Predict Global Playoff Outcomes"):
     
     # Predict probabilities
     y = model.predict(X)
-    st.write(y[0])
     
     # Store in session_state for later
     st.session_state['y'] = y
@@ -56,9 +54,9 @@ if st.button("Predict Global Playoff Outcomes"):
     st.session_state['df_playoff_strength'] = df
 
 # Display the previous result if it exists
-if 'df_playoff_prob' in st.session_state:
+if 'df_playoff_strength' in st.session_state:
     st.subheader("🏀 Global Playoff Probabilities:")
-    st.dataframe(st.session_state['df_playoff_prob'], use_container_width=True)
+    st.dataframe(st.session_state['df_playoff_strength'], use_container_width=True)
 
 
 # ---------- Run Playoff Simulations ----------
