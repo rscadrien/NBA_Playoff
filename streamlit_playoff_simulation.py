@@ -202,7 +202,14 @@ if st.button("Run Playoff Simulations"):
 # Display championship summary if it exists
 if 'Number_championships' in st.session_state and st.session_state['Number_championships']:
     st.subheader("🏆 NBA Championship Results after Simulations:")
-    Number_championships_sorted = dict(sorted(st.session_state['Number_championships'].items(), key=lambda item: item[1], reverse=True))
+        # Filter out teams with zero wins and sort
+    Number_championships_sorted = dict(
+        sorted(
+            {team: wins for team, wins in st.session_state['Number_championships'].items() if wins > 0}.items(),
+            key=lambda item: item[1],
+            reverse=True
+        )
+    )
     for team, wins in Number_championships_sorted.items():
         st.write(f"**{team}**: {wins} championships ({(wins/N)*100:.2f}%)")
 
