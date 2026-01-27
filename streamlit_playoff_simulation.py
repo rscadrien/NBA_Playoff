@@ -4,6 +4,7 @@ import streamlit as st
 import numpy as np
 from Data_loading_preprocessing.feature_engineering import encode_conference, encode_playoff_results, drop_columns
 from Data_loading_preprocessing.preprocessing import scale_features
+import altair as alt
 
 st.title("🏀 NBA Playoff Prediction")
 st.markdown("""
@@ -61,14 +62,18 @@ if st.button("Predict Global Playoff Strength"):
 
 # Display the previous result if it exists
 if 'df_playoff_strength' in st.session_state:
-    st.bar_chart(st.session_state['df_playoff_strength'].sort_values(by='Playoff Strength', ascending=False))
     df = st.session_state['df_playoff_strength']
 
     df_sorted = df.sort_values(
     by='Playoff Strength',   # column name
     ascending=False         # or True
     )
+    chart = alt.Chart(df_sorted).mark_bar().encode(
+    x=alt.X('Team', sort=None),  # <- keeps the order in the DataFrame
+    y='Playoff Strength'
+    )
 
+    st.altair_chart(chart, use_container_width=True)
     st.dataframe(df_sorted, use_container_width=True)
 
 
