@@ -15,6 +15,7 @@ def load_data_and_model():
     return X_ini, model
 st.write("Current NBA Teams Data:")
 X_ini, model = load_data_and_model()
+st.write(model)
 teams = X_ini['Team'].tolist()
 st.session_state['X_ini'] = X_ini
 st.subheader("Edit current NBA season data")
