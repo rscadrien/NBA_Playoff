@@ -13,13 +13,19 @@ def load_data_and_model():
     X_ini = pd.read_csv('./Data/Current_NBA_Season.csv')
     model = joblib.load('NBA.joblib')
     return X_ini, model
-
+st.write("Current NBA Teams Data:")
 X_ini, model = load_data_and_model()
 teams = X_ini['Team'].tolist()
+st.session_state['X_ini'] = X_ini
+st.dataframe(st.session_state['X_ini'], use_container_width=True)
 
-# ---------- Button 1: Predict Global Playoff Outcomes ----------
-st.subheader("Predict Global Playoff outcomes for all NBA teams:")
-if st.button("Predict Global Playoff Outcomes"):
+# ---------- Run Playoff Simulations ----------
+st.subheader("Run Playoff simulations:")
+T = st.number_input("Upset factor (higher = more upsets)", min_value=1.0, max_value=4.0, step=0.5, value=2.0)
+N = st.number_input("Number of simulations to run", min_value=10, max_value=1000, step=1, value=100)
+
+
+if st.button("Run Playoff Simulations"):
     X = X_ini.copy()
     # Encode and scale
     X = encode_conference(X, 'encoder_conference.joblib', mode='eval')
@@ -34,30 +40,6 @@ if st.button("Predict Global Playoff Outcomes"):
     # Store in session_state for later
     st.session_state['y_prob'] = y_prob
     st.session_state['X_ini'] = X_ini
-
-    # Temperature scaling
-    T = 2
-    prob_scaled = (y_prob**(1/T))/((y_prob**(1/T)) + ((1-y_prob)**(1/T)))
-    
-    # Display results
-    labels = ['Conf. Semi-Finalist', 'Conf. Finalist', 'NBA Finalist', 'NBA Champion']
-    df = pd.DataFrame(prob_scaled, columns=labels, index=teams)
-    df.index.name = "Team"
-    #Store dataframe in session state
-    st.session_state['df_playoff_prob'] = df
-
-# Display the previous result if it exists
-if 'df_playoff_prob' in st.session_state:
-    st.subheader("🏀 Global Playoff Probabilities:")
-    st.dataframe(st.session_state['df_playoff_prob'], use_container_width=True)
-
-# ---------- Button 2: Run Playoff Simulations ----------
-st.subheader("Run Playoff simulations:")
-T = st.number_input("Upset factor (higher = more upsets)", min_value=1.0, max_value=4.0, step=0.5, value=2.0)
-N = st.number_input("Number of simulations to run", min_value=10, max_value=1000, step=1, value=100)
-
-
-if st.button("Run Playoff Simulations"):
     # Initialize session state for simulations if not already
     if 'all_simulations' not in st.session_state:
         st.session_state['all_simulations'] = []
