@@ -30,7 +30,7 @@ st.session_state['X_ini'] = edited_df
 
 # ---------- Button 1: Predict Global Playoff Outcomes ----------
 st.subheader("Predict Global Playoff strength for all NBA teams:")
-if st.button("Predict Global Playoff Outcomes"):
+if st.button("Predict Global Playoff Strength"):
     X = X_ini.copy()
     # Encode and scale
     X = encode_conference(X, 'encoder_conference.joblib', mode='eval')
@@ -55,8 +55,14 @@ if st.button("Predict Global Playoff Outcomes"):
 
 # Display the previous result if it exists
 if 'df_playoff_strength' in st.session_state:
-    st.subheader("🏀 Global Playoff Probabilities:")
-    st.dataframe(st.session_state['df_playoff_strength'], use_container_width=True)
+    df = st.session_state['df_playoff_strength']
+
+    df_sorted = df.sort_values(
+    by='Playoff Strength',   # column name
+    ascending=False         # or True
+    )
+
+    st.dataframe(df_sorted, use_container_width=True)
 
 
 # ---------- Run Playoff Simulations ----------
