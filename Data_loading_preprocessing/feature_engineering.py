@@ -4,13 +4,13 @@ from sklearn.preprocessing import OrdinalEncoder
 import joblib
 
 def create_targets(df: pd.DataFrame) -> pd.DataFrame:
-    # Define the mapping
+# Define the mapping
     result_mapping = {
         'No Playoff': 0,
-        'First Round': 0.2,
-        'Conference Semi-Final': 0.4,
-        'Conference Final': 0.6,
-        'NBA Final': 0.8,
+        'First Round': 1/16,
+        'Conference Semi-Final': 1/8,
+        'Conference Final': 1/4,
+        'NBA Final': 1/2,
         'NBA Champion': 1
     }
     df['Playoff Outcome (numeric)'] = df['Playoff Outcome'].map(result_mapping)
@@ -27,10 +27,10 @@ def encode_conference(df: pd.DataFrame, encoder_path: str, mode: str = 'train') 
 def encode_playoff_results(df):
     result_mapping = {
         'No Playoff': 0,
-        'First Round': 0.2,
-        'Conference Semi-Final': 0.4,
-        'Conference Final': 0.6,
-        'NBA Final': 0.8,
+        'First Round': 1/16,
+        'Conference Semi-Final': 1/8,
+        'Conference Final': 1/4,
+        'NBA Final': 1/2,
         'NBA Champion': 1
     }
     df['2 seasons ago result (numeric)'] = df['2 seasons ago result'].map(result_mapping)
