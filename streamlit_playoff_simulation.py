@@ -17,7 +17,7 @@ st.write("Current NBA Teams Data:")
 X_ini, model = load_data_and_model()
 teams = X_ini['Team'].tolist()
 st.session_state['X_ini'] = X_ini
-st.dataframe(st.session_state['X_ini'].sort_values(by='Season Record', ascending=True), 
+st.dataframe(st.session_state['X_ini'].sort_values(by='Season record', ascending=True), 
              use_container_width=True)
 
 # ---------- Run Playoff Simulations ----------
