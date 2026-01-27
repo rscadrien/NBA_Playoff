@@ -10,7 +10,7 @@ st.title("🏀 NBA Playoff Prediction")
 # ---------- Load data and model once ----------
 @st.cache_data
 def load_data_and_model():
-    X_ini = pd.read_csv('./Data/Current_NBA_Season_01_26.csv')
+    X_ini = pd.read_csv('./Data/Current_NBA_Season_01_25.csv')
     model = joblib.load('NBA.joblib')
     return X_ini, model
 st.write("Current NBA Teams Data:")
@@ -27,6 +27,41 @@ edited_df = st.data_editor(
 st.session_state['X_ini'] = edited_df
 #st.dataframe(st.session_state['X_ini'].sort_values(by='Season record', ascending=False), 
 #             use_container_width=True)
+
+# ---------- Button 1: Predict Global Playoff Outcomes ----------
+st.subheader("Predict Global Playoff outcomes for all NBA teams:")
+if st.button("Predict Global Playoff Outcomes"):
+    X = X_ini.copy()
+    # Encode and scale
+    X = encode_conference(X, 'encoder_conference.joblib', mode='eval')
+    X = encode_playoff_results(X)
+    X = drop_columns(X)
+    scaling_cols = ['Conf. Seed', 'NBA Seed', 'ORtg Rank', 'DRtg Rank']
+    X = scale_features(X, scaling_cols, 'scaler_seed_rank.joblib', mode='eval')
+    
+    # Predict probabilities
+    y_prob = model.predict_proba(X)
+    
+    # Store in session_state for later
+    st.session_state['y_prob'] = y_prob
+    st.session_state['X_ini'] = X_ini
+
+    # Temperature scaling
+    T = 2
+    prob_scaled = (y_prob**(1/T))/((y_prob**(1/T)) + ((1-y_prob)**(1/T)))
+    
+    # Display results
+    labels = ['Conf. Semi-Finalist', 'Conf. Finalist', 'NBA Finalist', 'NBA Champion']
+    df = pd.DataFrame(prob_scaled, columns=labels, index=teams)
+    df.index.name = "Team"
+    #Store dataframe in session state
+    st.session_state['df_playoff_prob'] = df
+
+# Display the previous result if it exists
+if 'df_playoff_prob' in st.session_state:
+    st.subheader("🏀 Global Playoff Probabilities:")
+    st.dataframe(st.session_state['df_playoff_prob'], use_container_width=True)
+
 
 # ---------- Run Playoff Simulations ----------
 st.subheader("Run Playoff simulations:")
