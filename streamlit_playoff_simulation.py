@@ -29,7 +29,7 @@ st.session_state['X_ini'] = edited_df
 #             use_container_width=True)
 
 # ---------- Button 1: Predict Global Playoff Outcomes ----------
-st.subheader("Predict Global Playoff outcomes for all NBA teams:")
+st.subheader("Predict Global Playoff strength for all NBA teams:")
 if st.button("Predict Global Playoff Outcomes"):
     X = X_ini.copy()
     # Encode and scale
@@ -40,22 +40,18 @@ if st.button("Predict Global Playoff Outcomes"):
     X = scale_features(X, scaling_cols, 'scaler_seed_rank.joblib', mode='eval')
     
     # Predict probabilities
-    y_prob = model.predict_proba(X)
+    y = model.predict(X)
     
     # Store in session_state for later
-    st.session_state['y_prob'] = y_prob
+    st.session_state['y'] = y
     st.session_state['X_ini'] = X_ini
-
-    # Temperature scaling
-    T = 2
-    prob_scaled = (y_prob**(1/T))/((y_prob**(1/T)) + ((1-y_prob)**(1/T)))
     
     # Display results
-    labels = ['Conf. Semi-Finalist', 'Conf. Finalist', 'NBA Finalist', 'NBA Champion']
-    df = pd.DataFrame(prob_scaled, columns=labels, index=teams)
+    labels = ['Playoff Strength']
+    df = pd.DataFrame(y, columns=labels, index=teams)
     df.index.name = "Team"
     #Store dataframe in session state
-    st.session_state['df_playoff_prob'] = df
+    st.session_state['df_playoff_strength'] = df
 
 # Display the previous result if it exists
 if 'df_playoff_prob' in st.session_state:
@@ -69,30 +65,16 @@ T = st.number_input("Upset factor (higher = more upsets)", min_value=1.0, max_va
 N = st.number_input("Number of simulations to run", min_value=10, max_value=1000, step=1, value=100)
 
 if st.button("Run Playoff Simulations"):
-    X = X_ini.copy()
-    # Encode and scale
-    X = encode_conference(X, 'encoder_conference.joblib', mode='eval')
-    X = encode_playoff_results(X)
-    X = drop_columns(X)
-    scaling_cols = ['Conf. Seed', 'NBA Seed', 'ORtg Rank', 'DRtg Rank']
-    X = scale_features(X, scaling_cols, 'scaler_seed_rank.joblib', mode='eval')
-    
-    # Predict probabilities
-    y_prob = model.predict_proba(X)
-    
-    # Store in session_state for later
-    st.session_state['y_prob'] = y_prob
-    st.session_state['X_ini'] = X_ini
     # Initialize session state for simulations if not already
     if 'all_simulations' not in st.session_state:
         st.session_state['all_simulations'] = []
     if 'Number_championships' not in st.session_state:
         st.session_state['Number_championships'] = {team: 0 for team in teams}
 
-    if 'y_prob' not in st.session_state:
+    if 'y' not in st.session_state:
         st.error("Please first calculate the playoff probabilities!")
     else:
-        y_prob = st.session_state['y_prob']
+        y = st.session_state['y']
         X_ini = st.session_state['X_ini']
 
         # Define brackets
@@ -109,8 +91,8 @@ if st.button("Run Playoff Simulations"):
             winners_round1 = []
             matchups = [[0,7],[1,6],[2,5],[3,4]]
             for i,j in matchups:
-                p_i = y_prob[numbers[i]][0]
-                p_j = y_prob[numbers[j]][0]
+                p_i = y[numbers[i]]
+                p_j = y[numbers[j]]
                 EPS = 1e-6
                 p_i = np.clip(p_i, EPS, 1 - EPS)
                 p_j = np.clip(p_j, EPS, 1 - EPS)
@@ -125,8 +107,8 @@ if st.button("Run Playoff Simulations"):
             winners_round2 = []
             semi_matchups = [[0,3],[1,2]]
             for i,j in semi_matchups:
-                p_i = y_prob[winners_round1[i]][1]
-                p_j = y_prob[winners_round1[j]][1]
+                p_i = y[winners_round1[i]]
+                p_j = y[winners_round1[j]]
                 EPS = 1e-6
                 p_i = np.clip(p_i, EPS, 1 - EPS)
                 p_j = np.clip(p_j, EPS, 1 - EPS)
@@ -138,8 +120,8 @@ if st.button("Run Playoff Simulations"):
             rounds['Semi-Finals'] = winners_round2
 
             # Conference final
-            p_i = y_prob[winners_round2[0]][2]
-            p_j = y_prob[winners_round2[1]][2]
+            p_i = y[winners_round2[0]]
+            p_j = y[winners_round2[1]]
             EPS = 1e-6
             p_i = np.clip(p_i, EPS, 1 - EPS)
             p_j = np.clip(p_j, EPS, 1 - EPS)
@@ -167,8 +149,8 @@ if st.button("Run Playoff Simulations"):
             # NBA Final
             winner_East = winners_East['Conference Final']
             winner_West = winners_West['Conference Final']
-            p_E = y_prob[winner_East][3]
-            p_W = y_prob[winner_West][3]
+            p_E = y[winner_East][3]
+            p_W = y[winner_West][3]
             EPS = 1e-6
             p_E = np.clip(p_E, EPS, 1 - EPS)
             p_W = np.clip(p_W, EPS, 1 - EPS)
