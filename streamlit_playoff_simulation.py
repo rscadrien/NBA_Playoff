@@ -25,7 +25,7 @@ st.write("Current NBA Teams Data:")
 X_ini, model = load_data_and_model()
 teams = X_ini['Team'].tolist()
 st.session_state['X_ini'] = X_ini
-st.subheader("Edit current NBA season data")
+st.subheader("Current NBA season data")
 
 edited_df = st.data_editor(
     st.session_state["X_ini"],
@@ -33,62 +33,20 @@ edited_df = st.data_editor(
     num_rows="fixed",   # or "dynamic" if you want row add/delete
 )
 st.session_state['X_ini'] = edited_df
-#st.dataframe(st.session_state['X_ini'].sort_values(by='Season record', ascending=False), 
-#             use_container_width=True)
-
-# ---------- Button 1: Predict Global Playoff Outcomes ----------
-st.subheader("Predict Global Playoff strength for all NBA teams:")
-if st.button("Predict Global Playoff Strength"):
-    X = X_ini.copy()
-    # Encode and scale
-    X = encode_conference(X, 'encoder_conference.joblib', mode='eval')
-    X = encode_playoff_results(X)
-    X = drop_columns(X)
-    scaling_cols = ['Conf. Seed', 'NBA Seed', 'ORtg Rank', 'DRtg Rank']
-    X = scale_features(X, scaling_cols, 'scaler_seed_rank.joblib', mode='eval')
+X = X_ini.copy()
+# Encode and scale
+X = encode_conference(X, 'encoder_conference.joblib', mode='eval')
+X = encode_playoff_results(X)
+X = drop_columns(X)
+scaling_cols = ['Conf. Seed', 'NBA Seed', 'ORtg Rank', 'DRtg Rank']
+X = scale_features(X, scaling_cols, 'scaler_seed_rank.joblib', mode='eval')
     
-    # Predict probabilities
-    y = model.predict(X)
+# Predict probabilities
+y = model.predict(X)
     
-    # Store in session_state for later
-    st.session_state['y'] = y
-    st.session_state['X_ini'] = X_ini
-    
-    # Create DataFrame for display
-    labels = ['Playoff Strength']
-    df = pd.DataFrame(y, columns=labels, index=teams)
-    df.index.name = "Team"
-    #Store dataframe in session state
-    st.session_state['df_playoff_strength'] = df
-
-# Display the previous result if it exists
-if 'df_playoff_strength' in st.session_state:
-    df = st.session_state['df_playoff_strength']
-
-    df_sorted = df.sort_values(
-    by='Playoff Strength',   # column name
-    ascending=False         # or True
-    ).reset_index()
-    st.bar_chart(df_sorted, x='Team', y='Playoff Strength')
-    st.dataframe(df_sorted, use_container_width=True)
-    st.markdown("""
-                ### 🏀 What is Playoff Strength?
-                 **Playoff Strength** measures how far a team is expected to go in the NBA playoffs based on current season stats.  
-                 It’s not just about winning the championship—it reflects the likelihood of advancing through each playoff round.  
-                 **Scale:**  
-                 - **0** → ❌ No Playoff  
-                 - **1/16 (~0.06)** → 🔹 First Round exit  
-                 - **1/8 (~0.125)** → 🔹 Conference Semi-Final  
-                 - **1/4 (0.25)** → 🔹 Conference Final  
-                 - **1/2 (0.5)** → 🔹 NBA Final  
-                 - **1** → 🏆 NBA Champion  
-                 
-                 💡 **Tip:** Higher values mean a deeper playoff run.  
-                 For example:  
-                 - **0.3** → Likely to reach **Conference Semi-Finals**  
-                 - **0.8** → Strong chance of **NBA Final** or **Champion**
-                 """)
-
+# Store in session_state for later
+st.session_state['y'] = y
+st.session_state['X_ini'] = X_ini
 
 # ---------- Run Playoff Simulations ----------
 st.subheader("Run Playoff simulations:")
