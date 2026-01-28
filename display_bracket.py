@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 blue = "#87CEEB"
 TEAM_COLORS = {
     "Detroit Pistons": "red",
@@ -23,13 +24,25 @@ TEAM_COLORS = {
     "Los Angeles Clippers": "red",
 }
 
-def display_bracket(sim_result, X_ini, y, East_numbers, West_numbers):
+def display_bracket(sim_result, X_ini, y, T, East_numbers, West_numbers):
     """
     Display the NBA bracket for a given simulation.
     sim_result: one simulation from all_simulations
     X_ini: DataFrame with team info
     East_numbers, West_numbers: list of indices for East/West teams
     """
+    def matchup_prob(team_idx1, team_idx2):
+        # Compute scaled probability for team_idx1 to win
+        p1 = y[team_idx1]
+        p2 = y[team_idx2]
+        EPS = 1e-6
+        p1 = np.clip(p1, EPS, 1 - EPS)
+        p2 = np.clip(p2, EPS, 1 - EPS)
+        p1_scaled = (p1**(1/T)) / ((p1**(1/T)) + ((1-p1)**(1/T)))
+        p2_scaled = (p2**(1/T)) / ((p2**(1/T)) + ((1-p2)**(1/T)))
+        total = p1_scaled + p2_scaled
+        return p1_scaled/total, p2_scaled/total
+
     def print_matchup(team1_idx, team2_idx, winner_idx):
         team1_name = X_ini['Team'][team1_idx]
         team2_name = X_ini['Team'][team2_idx]
@@ -40,10 +53,14 @@ def display_bracket(sim_result, X_ini, y, East_numbers, West_numbers):
         color2 = TEAM_COLORS.get(team2_name, "black")
         color_winner = TEAM_COLORS.get(winner_name, "black")
 
+        p1_prob, p2_prob = matchup_prob(team1_idx, team2_idx)
+
         # Display with color
         st.markdown(
-            f"<span style='color:{color1}'>{team1_name}</span>  vs "
-            f"<span style='color:{color2}'>{team2_name}</span>  -> Winner: "
+            f"<span style='color:{color1}'>{team1_name}</span> "
+            f"({p1_prob:.1%}) vs "
+            f"<span style='color:{color2}'>{team2_name}</span> "
+            f"({p2_prob:.1%}) -> Winner: "
             f"<span style='color:{color_winner}; font-weight:bold'>{winner_name}</span>",
             unsafe_allow_html=True
         )
