@@ -199,12 +199,12 @@ if st.button("Run Playoff Simulations"):
 
             sim_result['East'] = winners_East
             sim_result['West'] = winners_West
-            progress_counts[X_ini['Team'][winner_East]]["NBA Final"] += 1
-            progress_counts[X_ini['Team'][winner_West]]["NBA Final"] += 1
 
             # NBA Final
             winner_East = winners_East['Conference Final']
             winner_West = winners_West['Conference Final']
+            progress_counts[X_ini['Team'][winner_East]]["NBA Final"] += 1
+            progress_counts[X_ini['Team'][winner_West]]["NBA Final"] += 1
             p_E = y[winner_East]
             p_W = y[winner_West]
             EPS = 1e-6
