@@ -25,7 +25,7 @@ Adjust the Upset Factor to make surprises more or less likely, and run multiple 
 # ---------- Load data and model once ----------
 @st.cache_data
 def load_data_and_model():
-    X_ini = pd.read_csv('./Data/Current_NBA_Season_01_26.csv')
+    X_ini = pd.read_csv('./Data/Current_NBA_Season.csv')
     model = joblib.load('NBA.joblib')
     return X_ini, model
 st.write("Current NBA Teams Data:")
