@@ -18,7 +18,7 @@ TEAM_COLORS = {
     "Houston Rockets": "red",
     "Los Angeles Lakers": "yellow",
     "Phoenix Suns": "orange",
-    "Minnesota Timberwolves": blue,
+    "Minesota Timberwolves": blue,
     "Golden State Warriors": blue,
     "Portland Trail Blazers": "red",
     "Los Angeles Clippers": "red",
