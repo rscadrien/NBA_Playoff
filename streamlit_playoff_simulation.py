@@ -181,6 +181,7 @@ if st.button("Run Playoff Simulations"):
         # Save results in session state
         st.session_state['all_simulations'] = all_simulations
         st.session_state['progress_counts'] = progress_counts
+        st.session_state['T'] = T
 
 # Display championship summary if it exists
 if 'progress_counts' in st.session_state:
@@ -242,7 +243,8 @@ if 'all_simulations' in st.session_state and st.session_state['all_simulations']
         West_numbers = st.session_state['West_numbers']
         X_ini = st.session_state['X_ini']
         y = st.session_state['y']
+        T = st.session_state['T']
         sim_result = st.session_state['all_simulations'][sim_number - 1]
-        display_bracket(sim_result, X_ini,y, East_numbers, West_numbers)
+        display_bracket(sim_result, X_ini,y, T, East_numbers, West_numbers)
     else:
         st.markdown(f"⚠️ No simulations found where **{team_choice}** reaches **{round_choice}**.")
