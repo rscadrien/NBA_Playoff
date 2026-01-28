@@ -2,9 +2,10 @@ import joblib
 import pandas as pd
 import streamlit as st
 import numpy as np
+import random
 from Data_loading_preprocessing.feature_engineering import encode_conference, encode_playoff_results, drop_columns
 from Data_loading_preprocessing.preprocessing import scale_features
-from draw_nba_bracket import draw_nba_bracket
+from display_bracket import display_bracket
 
 st.title("🏀 NBA Playoff Prediction")
 st.markdown("""
@@ -250,56 +251,39 @@ if 'progress_counts' in st.session_state:
 # ---------- Select a simulation to view the bracket ----------
 
 if 'all_simulations' in st.session_state and st.session_state['all_simulations']:
-    st.subheader("Example of brackets:")
-    sim_number = st.number_input(
-        "Choose simulation number to see the bracket",
-        min_value=1,
-        max_value=len(st.session_state['all_simulations']),
-        step=1
+    st.subheader("🔍 Show a bracket where a team reaches a specific round:")
+
+    team_choice = st.selectbox("Choose a team", X_ini['Team'].tolist())
+
+    round_choice = st.selectbox(
+        "Choose the round",
+        ["Conference Semi-Final", "Conference Final", "NBA Final", "NBA Champion"]
     )
 
-    if sim_number:
+    valid_sims = []
+    team_index = X_ini[X_ini['Team'] == team_choice].index[0]
+    for idx, sim_result in enumerate(st.session_state['all_simulations']):
+        if round_choice == "Conference Semi-Final":
+            if team_index in sim_result['East']['First Round'] or team_index in sim_result['West']['First Round']:
+                valid_sims.append(idx + 1)
+        elif round_choice == "Conference Final":
+            if team_index in sim_result['East']['Semi-Finals'] or team_index in sim_result['West']['Semi-Finals']:
+                valid_sims.append(idx + 1)
+        elif round_choice == "NBA Final":
+            if team_index == sim_result['East']['Conference Final'] or team_index == sim_result['West']['Conference Final']:
+                valid_sims.append(idx + 1)
+        elif round_choice == "NBA Champion":
+            if team_index == sim_result['NBA Final'][2]:
+                valid_sims.append(idx + 1)
+
+    if valid_sims:
+        sim_index = random.choice(valid_sims)
+        st.markdown(f"### Example bracket where **{team_choice}** reaches **{round_choice}** (Simulation #{sim_index}):")
+        sim_number = sim_index
         East_numbers = st.session_state['East_numbers']
         West_numbers = st.session_state['West_numbers']
         X_ini = st.session_state['X_ini']
         sim_result = st.session_state['all_simulations'][sim_number - 1]
-        #fig = draw_nba_bracket(X_ini, sim_result, East_numbers, West_numbers)
-        #st.pyplot(fig)
-        st.write("## 🏟️ East Conference")
-        st.write("### First round")
-        st.write(f"Matchup 1: {X_ini['Team'][East_numbers[0]]} vs {X_ini['Team'][East_numbers[7]]}")
-        st.write(f" Winner -> {X_ini['Team'][sim_result['East']['First Round'][0]]}")
-        st.write(f"Matchup 2: {X_ini['Team'][East_numbers[1]]} vs {X_ini['Team'][East_numbers[6]]} ")
-        st.write(f" Winner -> {X_ini['Team'][sim_result['East']['First Round'][1]]}")
-        st.write(f"Matchup 3: {X_ini['Team'][East_numbers[2]]} vs {X_ini['Team'][East_numbers[5]]}")
-        st.write(f" Winner -> {X_ini['Team'][sim_result['East']['First Round'][2]]}")
-        st.write(f"Matchup 4: {X_ini['Team'][East_numbers[3]]} vs {X_ini['Team'][East_numbers[4]]}")
-        st.write(f" Winner -> {X_ini['Team'][sim_result['East']['First Round'][3]]}")
-        st.write("### Conference Semi-Final")
-        st.write(f"Matchup 1: {X_ini['Team'][sim_result['East']['First Round'][0]]} vs {X_ini['Team'][sim_result['East']['First Round'][3]]}")
-        st.write(f" Winner -> {X_ini['Team'][sim_result['East']['Semi-Finals'][0]]}")
-        st.write(f"Matchup 2: {X_ini['Team'][sim_result['East']['First Round'][1]]} vs {X_ini['Team'][sim_result['East']['First Round'][2]]}")
-        st.write(f" Winner -> {X_ini['Team'][sim_result['East']['Semi-Finals'][1]]}")
-        st.write("### Conference Final")
-        st.write(f"Matchup: {X_ini['Team'][sim_result['East']['Semi-Finals'][0]]} vs {X_ini['Team'][sim_result['East']['Semi-Finals'][1]]}")
-        st.write(f" Winner -> {X_ini['Team'][sim_result['East']['Conference Final']]}")
-        st.write("## 🏟️ West Conference")
-        st.write("### First round")
-        st.write(f"Matchup 1: {X_ini['Team'][West_numbers[0]]} vs {X_ini['Team'][West_numbers[7]]}")
-        st.write(f" Winner -> {X_ini['Team'][sim_result['West']['First Round'][0]]}")
-        st.write(f"Matchup 2: {X_ini['Team'][West_numbers[1]]} vs {X_ini['Team'][West_numbers[6]]} ")
-        st.write(f" Winner -> {X_ini['Team'][sim_result['West']['First Round'][1]]}")
-        st.write(f"Matchup 3: {X_ini['Team'][West_numbers[2]]} vs {X_ini['Team'][West_numbers[5]]}")
-        st.write(f" Winner -> {X_ini['Team'][sim_result['West']['First Round'][2]]}")
-        st.write(f"Matchup 4: {X_ini['Team'][West_numbers[3]]} vs {X_ini['Team'][West_numbers[4]]}")
-        st.write(f" Winner -> {X_ini['Team'][sim_result['West']['First Round'][3]]}")
-        st.write("### Conference Semi-Final")
-        st.write(f"Matchup 1: {X_ini['Team'][sim_result['West']['First Round'][0]]} vs {X_ini['Team'][sim_result['West']['First Round'][3]]}")
-        st.write(f" Winner -> {X_ini['Team'][sim_result['West']['Semi-Finals'][0]]}")
-        st.write(f"Matchup 2: {X_ini['Team'][sim_result['West']['First Round'][1]]} vs {X_ini['Team'][sim_result['West']['First Round'][2]]}")
-        st.write(f" Winner -> {X_ini['Team'][sim_result['West']['Semi-Finals'][1]]}")
-        st.write("### Conference Final")
-        st.write(f"Matchup: {X_ini['Team'][sim_result['West']['Semi-Finals'][0]]} vs {X_ini['Team'][sim_result['West']['Semi-Finals'][1]]}")
-        st.write(f" Winner -> {X_ini['Team'][sim_result['West']['Conference Final']]}")
-        st.write("### 🏆 NBA Final")
-        st.write(f"{X_ini['Team'][sim_result['NBA Final'][0]]} vs {X_ini['Team'][sim_result['NBA Final'][1]]} -> Winner: {X_ini['Team'][sim_result['NBA Final'][2]]}")
+        display_bracket(sim_result, X_ini, East_numbers, West_numbers)
+    else:
+        st.markdown(f"⚠️ No simulations found where **{team_choice}** reaches **{round_choice}**.")
