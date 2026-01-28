@@ -1,4 +1,27 @@
 import streamlit as st
+TEAM_COLORS = {
+    "Detroit Pistons": "red",
+    "Boston Celtics": "green",
+    "Toronto Raptors": "red",
+    "New York Knicks": "orange",
+    "Cleveland Cavaliers": "red",
+    "Philadelphia 76ers": "blue",
+    "Miami Heat": "red",
+    "Orlando Magic": "blue",
+    "Chicago Bulls": "red",
+    "Atlanta Hawks": "red",
+    "Oklahoma City Thunder": "blue",
+    "San Antonio Spurs": "gray",
+    "Denver Nuggets": "blue",
+    "Houston Rockets": "red",
+    "Los Angeles Lakers": "yellow",
+    "Phoenix Suns": "orange",
+    "Minesota Timberwolves": "blue",
+    "Golden State Warriors": "blue",
+    "Portland Trail Blazers": "red",
+    "Los Angeles Clippers": "red",
+}
+
 def display_bracket(sim_result, X_ini, East_numbers, West_numbers):
     """
     Display the NBA bracket for a given simulation.
@@ -7,8 +30,23 @@ def display_bracket(sim_result, X_ini, East_numbers, West_numbers):
     East_numbers, West_numbers: list of indices for East/West teams
     """
     def print_matchup(team1_idx, team2_idx, winner_idx):
-        st.write(f"{X_ini['Team'][team1_idx]} vs {X_ini['Team'][team2_idx]} -> Winner: {X_ini['Team'][winner_idx]}")
+        team1_name = X_ini['Team'][team1_idx]
+        team2_name = X_ini['Team'][team2_idx]
+        winner_name = X_ini['Team'][winner_idx]
 
+        # Get colors (default to black if team not in dict)
+        color1 = TEAM_COLORS.get(team1_name, "black")
+        color2 = TEAM_COLORS.get(team2_name, "black")
+        color_winner = TEAM_COLORS.get(winner_name, "black")
+
+        # Display with color
+        st.markdown(
+            f"<span style='color:{color1}'>{team1_name}</span> vs "
+            f"<span style='color:{color2}'>{team2_name}</span> -> Winner: "
+            f"<span style='color:{color_winner}; font-weight:bold'>{winner_name}</span>",
+            unsafe_allow_html=True
+        )
+    
     # ---------- East Conference ----------
     st.write("## 🏟️ East Conference")
     st.write("### First Round")

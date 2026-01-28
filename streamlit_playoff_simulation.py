@@ -54,7 +54,7 @@ if st.button("Predict Global Playoff Strength"):
     st.session_state['y'] = y
     st.session_state['X_ini'] = X_ini
     
-    # Display results
+    # Create DataFrame for display
     labels = ['Playoff Strength']
     df = pd.DataFrame(y, columns=labels, index=teams)
     df.index.name = "Team"
