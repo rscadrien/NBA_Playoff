@@ -7,13 +7,20 @@ from Data_loading_preprocessing.feature_engineering import encode_conference, en
 from Data_loading_preprocessing.preprocessing import scale_features
 from display_bracket import display_bracket
 
-st.title("🏀 NBA Playoff Prediction")
+st.title("🏀 NBA Playoff Simulator powered by ML/AI")
 st.markdown("""
+This app uses a machine learning model trained on 40 years of NBA playoff data to estimate the playoff strength of each team in the current season.
+
+The model assigns a numerical strength score to each team, which is then converted into probabilities of winning a playoff series between any two teams. Using these probabilities, the app can simulate the entire NBA playoffs multiple times, accounting for upsets and randomness.
+
+You can explore the predicted playoff outcomes, visualize potential brackets, and see the likelihood of each team reaching each stage—from the Conference Semi-Finals all the way to NBA Champion.
+
+Adjust the Upset Factor to make surprises more or less likely, and run multiple simulations to get a robust view of playoff dynamics. This tool allows fans, analysts, or enthusiasts to experiment and explore different playoff scenarios before the real games are played.
+
 ### How to use this app:
 1. Edit the current NBA season data if needed.
-2. Click **Predict Global Playoff Strength** to see team playoff strength.
-3. Adjust the **Upset factor** and **Number of simulations**, then click **Run Playoff Simulations**.
-4. View simulation brackets and overall championship results.
+2. Adjust the **Upset factor** and **Number of simulations**, then click **Run Playoff Simulations**.
+3. Choose a team and round to view an example bracket where that team reaches the selected round.
 """)
 # ---------- Load data and model once ----------
 @st.cache_data
