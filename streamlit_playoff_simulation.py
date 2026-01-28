@@ -59,7 +59,7 @@ st.session_state['X_ini'] = X_ini
 st.subheader("Run Playoff simulations:")
 T = st.number_input("Upset factor (higher = more upsets)", min_value=0.0, max_value=5.0, step=0.1, value=0.8,
                     help="0 = no upsets, 1 = some randomness, higher values = more likely upsets")
-N = st.number_input("Number of simulations to run", min_value=10, max_value=1000, step=1, value=100)
+N = st.number_input("Number of simulations to run", min_value=100, max_value=100000, step=1, value=1000)
 
 if st.button("Run Playoff Simulations"):
     # Initialize session state for simulations if not already
