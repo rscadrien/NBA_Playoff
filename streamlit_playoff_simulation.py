@@ -166,7 +166,18 @@ if st.button("Run Playoff Simulations"):
 
         # Run simulations
         all_simulations = []
-        Number_championships = {team: 0 for team in teams}  # reset counts for this run
+        # Initialize progression counters
+        progress_counts = {
+            team: {
+                "Conference Semi-Final": 0,
+                "Conference Final": 0,
+                "NBA Final": 0,
+                "NBA Champion": 0
+            }
+            for team in teams
+        }
+
+
 
         for sim in range(N):
             sim_result = {}
@@ -174,8 +185,22 @@ if st.button("Run Playoff Simulations"):
             # Simulate conferences
             winners_East = simulate_conference(East_numbers)
             winners_West = simulate_conference(West_numbers)
+            #Count progressions
+            for t in winners_East['First Round']:
+                progress_counts[X_ini['Team'][t]]["Conference Semi-Final"] += 1
+
+            for t in winners_West['First Round']:
+                progress_counts[X_ini['Team'][t]]["Conference Semi-Final"] += 1
+            for t in winners_East['Semi-Finals']:
+                progress_counts[X_ini['Team'][t]]["Conference Final"] += 1
+
+            for t in winners_West['Semi-Finals']:
+                progress_counts[X_ini['Team'][t]]["Conference Final"] += 1
+
             sim_result['East'] = winners_East
             sim_result['West'] = winners_West
+            progress_counts[X_ini['Team'][winner_East]]["NBA Final"] += 1
+            progress_counts[X_ini['Team'][winner_West]]["NBA Final"] += 1
 
             # NBA Final
             winner_East = winners_East['Conference Final']
@@ -191,27 +216,36 @@ if st.button("Run Playoff Simulations"):
             winner_NBA = np.random.choice([winner_East, winner_West], p=[p_E_scaled/total, p_W_scaled/total])
             sim_result['NBA Final'] = (winner_East, winner_West, winner_NBA)
 
-            Number_championships[X_ini['Team'][winner_NBA]] += 1
+            progress_counts[X_ini['Team'][winner_NBA]]["NBA Champion"] += 1
             all_simulations.append(sim_result)
 
         # Save results in session state
         st.session_state['all_simulations'] = all_simulations
-        st.session_state['Number_championships'] = Number_championships
-
+        st.session_state['progress_counts'] = progress_counts
 
 # Display championship summary if it exists
-if 'Number_championships' in st.session_state and st.session_state['Number_championships']:
-    st.subheader("🏆 NBA Championship Results after Simulations:")
-        # Filter out teams with zero wins and sort
-    Number_championships_sorted = dict(
-        sorted(
-            {team: wins for team, wins in st.session_state['Number_championships'].items() if wins > 0}.items(),
-            key=lambda item: item[1],
-            reverse=True
-        )
+if 'progress_counts' in st.session_state:
+    st.subheader("📊 Playoff Progression Summary")
+
+    df_progress = pd.DataFrame.from_dict(
+        st.session_state['progress_counts'],
+        orient='index'
     )
-    for team, wins in Number_championships_sorted.items():
-        st.write(f"**{team}**: {wins} championships ({(wins/N)*100:.2f}%)")
+
+    df_progress = df_progress.sort_values(
+        by="NBA Champion",
+        ascending=False
+    )
+    df_progress_pct = df_progress / N
+    st.dataframe(df_progress_pct.style.format("{:.2%}"))
+
+    
+
+    st.markdown("""
+    **Interpretation:**
+    - Values correspond to the percentage (out of all simulations)
+      a team reached each playoff stage.
+    """)
 
 # ---------- Select a simulation to view the bracket ----------
 
