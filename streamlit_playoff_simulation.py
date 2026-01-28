@@ -15,7 +15,7 @@ The model assigns a numerical strength score to each team, which is then convert
 
 You can explore the predicted playoff outcomes, visualize potential brackets, and see the likelihood of each team reaching each stage—from the Conference Semi-Finals all the way to NBA Champion.
 
-Adjust the Upset Factor to make surprises more or less likely, and run multiple simulations to get a robust view of playoff dynamics. This tool allows fans, analysts, or enthusiasts to experiment and explore different playoff scenarios before the real games are played.
+Adjust the Upset Factor to make surprises more or less likely, and run multiple simulations to get a robust view of playoff dynamics.
 
 ### How to use this app:
 1. Edit the current NBA season data if needed.
@@ -57,7 +57,7 @@ st.session_state['X_ini'] = X_ini
 
 # ---------- Run Playoff Simulations ----------
 st.subheader("Run Playoff simulations:")
-T = st.number_input("Upset factor (higher = more upsets)", min_value=0.0, max_value=5.0, step=0.1, value=0.5,
+T = st.number_input("Upset factor (higher = more upsets)", min_value=0.0, max_value=5.0, step=0.1, value=1.0,
                     help="0 = no upsets, 1 = some randomness, higher values = more likely upsets")
 N = st.number_input("Number of simulations to run", min_value=10, max_value=1000, step=1, value=100)
 
