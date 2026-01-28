@@ -33,8 +33,6 @@ def display_bracket(sim_result, X_ini, y, East_numbers, West_numbers):
     def print_matchup(team1_idx, team2_idx, winner_idx):
         team1_name = X_ini['Team'][team1_idx]
         team2_name = X_ini['Team'][team2_idx]
-        prob_team1 = y[team1_idx]
-        prob_team2 = y[team2_idx]
         winner_name = X_ini['Team'][winner_idx]
 
         # Get colors (default to black if team not in dict)
@@ -44,8 +42,8 @@ def display_bracket(sim_result, X_ini, y, East_numbers, West_numbers):
 
         # Display with color
         st.markdown(
-            f"<span style='color:{color1}'>{team1_name}</span> (prob: {prob_team1}) vs "
-            f"<span style='color:{color2}'>{team2_name}</span> (prob: {prob_team2}) -> Winner: "
+            f"<span style='color:{color1}'>{team1_name}</span>  vs "
+            f"<span style='color:{color2}'>{team2_name}</span>  -> Winner: "
             f"<span style='color:{color_winner}; font-weight:bold'>{winner_name}</span>",
             unsafe_allow_html=True
         )
