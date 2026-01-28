@@ -44,6 +44,6 @@ def display_bracket(sim_result, X_ini, East_numbers, West_numbers):
     print_matchup(semi[0], semi[1], conf_final)
 
     # ---------- NBA Final ----------
-    st.write("### 🏆 NBA Final")
+    st.write("## 🏆 NBA Final")
     final = sim_result['NBA Final']
     print_matchup(final[0], final[1], final[2])
