@@ -202,7 +202,7 @@ if 'progress_counts' in st.session_state:
 
     st.markdown("""
     **Interpretation:**
-    - Values correspond to the percentage (out of all simulations)
+    Values correspond to the percentage (out of all simulations)
       a team reached each playoff stage.
     """)
 
@@ -241,7 +241,8 @@ if 'all_simulations' in st.session_state and st.session_state['all_simulations']
         East_numbers = st.session_state['East_numbers']
         West_numbers = st.session_state['West_numbers']
         X_ini = st.session_state['X_ini']
+        y = st.session_state['y']
         sim_result = st.session_state['all_simulations'][sim_number - 1]
-        display_bracket(sim_result, X_ini, East_numbers, West_numbers)
+        display_bracket(sim_result, X_ini,y, East_numbers, West_numbers)
     else:
         st.markdown(f"⚠️ No simulations found where **{team_choice}** reaches **{round_choice}**.")
