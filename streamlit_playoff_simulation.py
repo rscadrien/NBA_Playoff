@@ -83,7 +83,40 @@ if st.button("Run Playoff Simulations"):
         # Helper function: simulate a single conference and return all round winners
         def simulate_conference(numbers):
             rounds = {}
+            #Playin first round
+            winner_playin = []
+            loser_playin = []
+            matchups_playin = [[6,7],[8,9]]
+            for i,j in matchups_playin:
+                p_i = y[numbers[i]]
+                p_j = y[numbers[j]]
+                EPS = 1e-6
+                p_i = np.clip(p_i, EPS, 1-EPS)
+                p_j = np.clip(p_j, EPS, 1-EPS)
+                p_i_scaled = (p_i**(1/T))/((p_i**(1/T))+((1-p_i)**(1/T)))
+                p_j_scaled = (p_j**(1/T))/((p_j**(1/T))+((1-p_j)**(1/T)))
+                total = p_i_scaled + p_j_scaled
+                winner = np.random.choice([numbers[i], numbers[j]], p=[p_i_scaled/total, p_j_scaled/total])
+                loser = numbers[j] if winner == numbers[i] else numbers[i]
+                winner_playin.append(winner)
+                loser_playin.append(loser)
+            #Playin third game for 8th seed
+            p_i = y[loser_playin[0]]
+            p_j = y[winner_playin[1]]
+            EPS = 1e-6
+            p_i = np.clip(p_i, EPS, 1-EPS)
+            p_j = np.clip(p_j, EPS, 1-EPS)
+            p_i_scaled = (p_i**(1/T))/((p_i**(1/T))+((1-p_i)**(1/T)))
+            p_j_scaled = (p_j**(1/T))/((p_j**(1/T))+((1-p_j)**(1/T)))
+            total = p_i_scaled + p_j_scaled
+            winner = np.random.choice([loser_playin[0], winner_playin[1]], p=[p_i_scaled/total, p_j_scaled/total])
+            winner_playin.append(winner)
+            rounds['Playin'] = winner_playin
 
+            
+            # Update numbers for first round
+            numbers[6] = winner_playin[0]
+            numbers[7] = winner_playin[2]
             # First round
             winners_round1 = []
             matchups = [[0,7],[1,6],[2,5],[3,4]]
