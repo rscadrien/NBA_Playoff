@@ -72,7 +72,7 @@ def display_bracket(sim_result, X_ini, y, T, East_numbers, West_numbers):
     for i,j,k in zip([6,8], [7,9], playin[0:2]):
         print_matchup(East_numbers[i], East_numbers[j], k)
     
-    loser = East_numbers[7] if playin[0] == East_numbers[i] else East_numbers[i]
+    loser = East_numbers[7] if playin[0] == East_numbers[6] else East_numbers[6]
     print_matchup(loser, playin[1], playin[2])
 
     # Update numbers for first round
@@ -103,7 +103,7 @@ def display_bracket(sim_result, X_ini, y, T, East_numbers, West_numbers):
     for i,j,k in zip([6,8], [7,9], playin[0:2]):
         print_matchup(West_numbers[i], West_numbers[j], k)
     
-    loser = West_numbers[7] if playin[0] == West_numbers[i] else West_numbers[i]
+    loser = West_numbers[7] if playin[0] == West_numbers[6] else West_numbers[6]
     print_matchup(loser, playin[1], playin[2])
 
     # Update numbers for first round
