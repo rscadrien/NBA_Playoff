@@ -76,15 +76,16 @@ def display_bracket(sim_result, X_ini, y, T, East_numbers, West_numbers):
     print_matchup(loser, playin[1], playin[2])
 
     # Update numbers for first round
-    East_numbers[6] = playin[0]
-    East_numbers[7] = playin[2]
+    new_east_numbers = East_numbers.copy()
+    new_east_numbers[6] = playin[0]
+    new_east_numbers[7] = playin[2]
     
 
     st.write("### First Round")
     first_round = sim_result['East']['First Round']
     matchups = [[0,7],[1,6],[2,5],[3,4]]
     for i,j,k in zip([0,1,2,3], [7,6,5,4], first_round):
-        print_matchup(East_numbers[i], East_numbers[j], k)
+        print_matchup(new_east_numbers[i], new_east_numbers[j], k)
 
     st.write("### Conference Semi-Final")
     semi = sim_result['East']['Semi-Finals']
@@ -106,14 +107,15 @@ def display_bracket(sim_result, X_ini, y, T, East_numbers, West_numbers):
     print_matchup(loser, playin[1], playin[2])
 
     # Update numbers for first round
-    West_numbers[6] = playin[0]
-    West_numbers[7] = playin[2]
+    new_west_numbers = West_numbers.copy()
+    new_west_numbers[6] = playin[0]
+    new_west_numbers[7] = playin[2]
 
     st.write("### First Round")
     first_round = sim_result['West']['First Round']
     matchups = [[0,7],[1,6],[2,5],[3,4]]
     for i,j,k in zip([0,1,2,3], [7,6,5,4], first_round):
-        print_matchup(West_numbers[i], West_numbers[j], k)
+        print_matchup(new_west_numbers[i], new_west_numbers[j], k)
 
     st.write("### Conference Semi-Final")
     semi = sim_result['West']['Semi-Finals']

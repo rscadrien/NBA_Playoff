@@ -115,21 +115,22 @@ if st.button("Run Playoff Simulations"):
 
             
             # Update numbers for first round
-            numbers[6] = winner_playin[0]
-            numbers[7] = winner_playin[2]
+            new_numbers = numbers.copy()
+            new_numbers[6] = winner_playin[0]
+            new_numbers[7] = winner_playin[2]
             # First round
             winners_round1 = []
             matchups = [[0,7],[1,6],[2,5],[3,4]]
             for i,j in matchups:
-                p_i = y[numbers[i]]
-                p_j = y[numbers[j]]
+                p_i = y[new_numbers[i]]
+                p_j = y[new_numbers[j]]
                 EPS = 1e-6
                 p_i = np.clip(p_i, EPS, 1 - EPS)
                 p_j = np.clip(p_j, EPS, 1 - EPS)
                 p_i_scaled = (p_i**(1/T))/((p_i**(1/T))+((1-p_i)**(1/T)))
                 p_j_scaled = (p_j**(1/T))/((p_j**(1/T))+((1-p_j)**(1/T)))
                 total = p_i_scaled + p_j_scaled
-                winner = np.random.choice([numbers[i], numbers[j]], p=[p_i_scaled/total, p_j_scaled/total])
+                winner = np.random.choice([new_numbers[i], new_numbers[j]], p=[p_i_scaled/total, p_j_scaled/total])
                 winners_round1.append(winner)
             rounds['First Round'] = winners_round1
 
