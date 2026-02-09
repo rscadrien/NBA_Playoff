@@ -10,7 +10,7 @@ TEAM_COLORS = {
     "Philadelphia 76ers": blue,
     "Miami Heat": "red",
     "Orlando Magic": blue,
-    "Chicago Bulls": "red",
+    "Charlotte Hornets": blue,
     "Atlanta Hawks": "red",
     "Oklahoma City Thunder": blue,
     "San Antonio Spurs": "gray",
