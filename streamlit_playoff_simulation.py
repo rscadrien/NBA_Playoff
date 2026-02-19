@@ -21,6 +21,8 @@ Adjust the Upset Factor to make surprises more or less likely, and run multiple 
 1. Edit the current NBA season data if needed.
 2. Adjust the **Upset factor** and **Number of simulations**, then click **Run Playoff Simulations**.
 3. Choose a team and round to view an example bracket where that team reaches the selected round.
+
+You can find more details on the model in the medium article: https://medium.com/@adriendevolder/nba-playoff-simulator-powered-by-machine-learning-7b6ac62b7198
 """)
 # ---------- Load data and model once ----------
 @st.cache_data
