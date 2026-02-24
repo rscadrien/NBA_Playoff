@@ -1,21 +1,21 @@
 ﻿Season,Team,Conference,Season record,Conf. Seed,NBA Seed,Last 20 Games record,ORtg Rank,DRtg Rank,2 seasons ago result,Last season result
-2025-2026,Detroit Pistons,East,0.764,1,1,0.8,10,2,No Playoff,First Round
+2025-2026,Detroit Pistons,East,0.75,1,1,0.75,11,2,No Playoff,First Round
 2025-2026,Boston Celtics,East,0.661,2,4,0.7,2,7,NBA Champion,Conference Semi-Final
 2025-2026,New York Knicks,East,0.638,3,5,0.65,3,11,Conference Semi-Final,Conference Final
 2025-2026,Cleveland Cavaliers,East,0.621,4,6,0.75,5,12,Conference Semi-Final,Conference Semi-Final
-2025-2026,Toronto Raptors,East,0.596,5,11,0.6,13,5,No Playoff,No Playoff
+2025-2026,Toronto Raptors,East,0.596,5,11,0.6,17,6,No Playoff,No Playoff
 2025-2026,Philadelphia 76ers,East,0.544,6,13,0.5,13,15,First Round,No Playoff
-2025-2026,Orlando Magic,East,0.536,7,14,0.5,19,13,First Round,First Round
+2025-2026,Orlando Magic,East,0.536,7,14,0.5,18,13,First Round,First Round
 2025-2026,Miami Heat,East,0.534,8,15,0.55,15,4,First Round,First Round
 2025-2026,Atlanta Hawks,East,0.475,9,18,0.5,20,16,No Playoff,No Playoff
 2025-2026,Charlotte Hornets,East,0.466,10,20,0.7,6,18,No Playoff,No Playoff
 2025-2026,Oklahoma City Thunder,West,0.759,1,2,0.65,4,1,Conference Semi-Final,NBA Champion
-2025-2026,San Antonio Spurs,West,0.714,2,3,0.75,7,3,No Playoff,No Playoff
-2025-2026,Denver Nuggets,West,0.621,3,7,0.55,1,23,Conference Semi-Final,Conference Semi-Final
-2025-2026,Houston Rockets,West,0.618,4,8,0.6,8,6,No Playoff,First Round
-2025-2026,Los Angeles Lakers,West,0.607,5,9,0.55,11,24,First Round,First Round
+2025-2026,San Antonio Spurs,West,0.719,2,3,0.75,7,3,No Playoff,No Playoff
+2025-2026,Houston Rockets,West,0.618,3,8,0.65,8,5,No Playoff,First Round
+2025-2026,Denver Nuggets,West,0.625,4,7,0.55,1,23,Conference Semi-Final,Conference Semi-Final
+2025-2026,Los Angeles Lakers,West,0.607,5,9,0.55,10,24,First Round,First Round
 2025-2026,Minesota Timberwolves,West,0.603,6,10,0.5,9,9,Conference Final,Conference Final
-2025-2026,Phoenix Suns,West,0.569,7,12,0.5,17,10,First Round,No Playoff
+2025-2026,Phoenix Suns,West,0.569,7,12,0.5,16,10,First Round,No Playoff
 2025-2026,Golden State Warriors,West,0.526,8,16,0.55,14,8,No Playoff,Conference Semi-Final
 2025-2026,Portland Trail Blazers,West,0.483,9,17,0.5,21,19,No Playoff,No Playoff
 2025-2026,Los Angeles Clippers,West,0.474,10,19,0.65,12,20,First Round,First Round
