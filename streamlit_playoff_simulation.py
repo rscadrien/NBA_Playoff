@@ -266,14 +266,38 @@ if 'all_simulations' in st.session_state and st.session_state['all_simulations']
     team_index = X_ini[X_ini['Team'] == team_choice].index[0]
     for idx, sim_result in enumerate(st.session_state['all_simulations']):
         if round_choice == "Conference Semi-Final":
-            if team_index in sim_result['East']['First Round'] or team_index in sim_result['West']['First Round']:
+            reached = (
+                team_index in sim_result['East']['First Round'] or
+                team_index in sim_result['West']['First Round']
+            )
+            advanced = (
+                team_index in sim_result['East']['Semi-Finals'] or
+                team_index in sim_result['West']['Semi-Finals']
+            )
+            if reached and not advanced:
                 valid_sims.append(idx + 1)
+
         elif round_choice == "Conference Final":
-            if team_index in sim_result['East']['Semi-Finals'] or team_index in sim_result['West']['Semi-Finals']:
+            reached = (
+                team_index in sim_result['East']['Semi-Finals'] or
+                team_index in sim_result['West']['Semi-Finals']
+            )
+            advanced = (
+                team_index == sim_result['East']['Conference Final'] or
+                team_index == sim_result['West']['Conference Final']
+            )
+            if reached and not advanced:
                 valid_sims.append(idx + 1)
+
         elif round_choice == "NBA Final":
-            if team_index == sim_result['East']['Conference Final'] or team_index == sim_result['West']['Conference Final']:
+            reached = (
+                team_index == sim_result['East']['Conference Final'] or
+                team_index == sim_result['West']['Conference Final']
+            )
+            advanced = (team_index == sim_result['NBA Final'][2])  # champion
+            if reached and not advanced:
                 valid_sims.append(idx + 1)
+
         elif round_choice == "NBA Champion":
             if team_index == sim_result['NBA Final'][2]:
                 valid_sims.append(idx + 1)
